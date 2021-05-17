@@ -1,7 +1,7 @@
 # Личный проект «Нёрдс»
 
 * Студент: [Георгий Нарыжный](https://up.htmlacademy.ru/htmlcss/31/user/1067855).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Кислый](https://htmlacademy.ru/profile/smart-grizzly).
 
 ---
 
