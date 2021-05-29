@@ -1,49 +1,52 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
     <link rel="icon" href="favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
   </head>
-  <body>
-<header>
-  <nav>
-    <a>
+  <body class="page-body">
+<header class="main-header">
+  <nav class="main-nav">
+    <a class="main-header-logo">
       <img src="img/nerds-logo.png" width="160" height="65" alt="Логотип Хедер">
     </a>
-    <ul>
-      <li><a href="#">Студия</a></li>
+    <ul class="list-navigation">
+      <li class="nav-items"><a href="#">Студия</a></li>
       <li><a href="#">Клиенты</a></li>
       <li><a href="#">Магазин</a></li>
       <li><a href="#">Контакты</a></li>
     </ul>
-    <a href="#">Корзина
+    <a class="login-link" href="#">Корзина
     <img src="img/cart-icon.svg " width="15" height="11" alt="Корзина">
   </a>
   </nav> 
 </header>
 
-<main>
+<main class="container">
 
-<section>
+<section class="main-section">
     <h1>
       Долго, дорого,<br>скрупулезно.
     </h1>
     <p>
       Математически выверенный дизайн<br>для вашего сайта или мобильного приложения.
     </p>
-<a href="#">УЗНАТЬ БОЛЬШЕ</a>
+<a class="button" href="#">УЗНАТЬ БОЛЬШЕ</a>
 </section>
 
-<div>
+<div class="slider">
     <input type="radio" id="slider1" name="slider" value="slide1" checked>
     <input type="radio" id="slider2" name="slider" value="slide2">
     <input type="radio" id="slider3" name="slider" value="slide3">
 </div>
 
-    <section>
-<ul>
-<li>
+    <section class="second-section">
+<ul class="picture-list">
+<li class="list-items">
   <img src="img/illustration1.jpg" width="300" height="146" alt="Веб сайты">
   <h2>Веб-сайты</h2>
   <p>
@@ -57,10 +60,10 @@
     <img src="img/illustration2.jpg" width="300" height="146" alt="Приложения">
     <h2>Приложения</h2>
     <p>Покорите топ-10 приложений<br>в AppStore и Google Play</p>
-    <a href="#">Заказать</a>
+    <a class="button" href="#">Заказать</a>
   </li>
   </ul>
-  <ul>
+  <ul class="picture-list">
     <li>
       <img src="img/illustration3.jpg" width="300" height="146" alt="Презентации">
       <h2>Презентации</h2>
@@ -70,25 +73,25 @@
     </ul>
 </section>
 
-<section>
+<section class="third-section">
   <h2>
     Мы — маленькая, но гордая
     <br>дизайн-студия из Краснодара.
   </h2>
   <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет<br>превыше креатива. Работаем не покладая рук, как роботы.</p>
   <p>Выполняем заказы на разработку:</p>
-  <ul>
-    <li>Веб-сайтов любой сложности</li>
+  <ul class="text-list">
+    <li class="text-items">Веб-сайтов любой сложности</li>
     <li>Мобильных приложений для iOS и Android</li>
     <li>Слайдшоу и видео для корпоративных презентаций</li>
   </ul>
 </section>
 
-<section>
-  <img src="img/nerdsillustration1.png" width="360" height="208" alt="Фон секции">
+<section class="third-section-image">
+  <img class="third-section-logo" src="img/nerdsillustration1.png" width="360" height="208" alt="Фон секции">
   <h3>с 2004 года Любим точность во всем:</h3>
-  <ul>
-    <li>
+  <ul class="percent-list">
+    <li class="percent-text">
       146<sup>%</sup>
       <p>Уровень<br>самоотдачи</p>
     </li>
@@ -103,9 +106,9 @@
   </ul>
   </section>
 
-<section>
-<ul>
-  <li>
+<section class="brand-section">
+<ul class="brand-list">
+  <li class="brand-items">
     <a href="#">
       <img src="img/logohtmlacademy1.png" width="199" height="57" alt="Академия">
     </a>
@@ -127,15 +130,15 @@
   </li>
 </ul>
 </section>
-<section>
-<div>
+<section class="map-section">
+<div class="map-logo">
   <img src="img/map1.png" width="1440" height="416" alt="Карта города">
-  <div>
+  <div class="preview">
     <h3>NЁRDS DESIGN STUDIO</h3>
     <p>наб. Реки Карповки,<br>5 лит П, Санкт-Петербург<br>+7 800 555-86-28</p>
-    <a href="#">Напишите нам</a>
+    <a class="button" href="#">Напишите нам</a>
   </div>
-  <div>
+  <div class="pin">
     <img src="img/mapmarker1.png" width="231" height="190" alt="пин карты">
   </div>
 </div>
@@ -143,37 +146,37 @@
 
 </main>
 
-<footer>
-  <h2>Давайте дружить, это выгодно!</h2>
+<footer class="main-footer">
+  <h2 class="footer-text">Давайте дружить, это выгодно!</h2>
   <p>Скидка 10% для друзей из социальных сетей.</p>
 
-  <a href="#" target="_blank">
+  <a class="footer-icon" href="#" target="_blank">
     <img src="img/vk-icon.svg" width="81" height="81" alt="Вконтакте">
   </a>
-  <a href="#" target="_blank">
+  <a class="footer-icon" href="#" target="_blank">
     <img src="img/fb-icon.svg" width="81" height="81" alt="Фейс бук">
   </a>
-  <a href="#" target="_blank">
+  <a class="footer-icon" href="#" target="_blank">
     <img src="img/insta-icon.svg" width="81" height="81" alt="Фейс бук"> 
   </a>
 </footer>
 
-<div>
+<div class="button">
   <h3>Напишите нам</h3>
   <form action="/" method="post">
-  <p>
+  <p class="modal-description">
     <label for="login">Ваше имя</label>
-    <input type="text" id="login" name="login" placeholder="Имя Фамилия"></p>
+    <input class="user-login" type="text" id="login" name="login" placeholder="Имя Фамилия"></p>
     <p>
     <label for="email">Ваш email:</label>
-    <input type="email" id="email" name="login" placeholder="email@example.com"></p>
+    <input class="user-email" type="email" id="email" name="login" placeholder="email@example.com"></p>
     <p>
     <label for="comment">Текст письма</label>
-    <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+    <textarea class="area-text" name="comment" id="comment" cols="30" rows="10"></textarea>
   </p>
-  <button type="submit">Отправить</button>
+  <button class="button" type="submit">Отправить</button>
   </form>
-  <button type="button">Х</button>
+  <button class="button" type="button">Х</button>
 </div>
 
   </body>
