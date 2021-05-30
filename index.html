@@ -57,16 +57,16 @@
 <ul class="picture-list">
   <li class="picture-items">
     <img class="apps-logo" src="img/illustration2.jpg" width="300" height="146" alt="Приложения">
-    <h2 class="apps-title">Приложения</h2>
-    <p class="apps-description">Покорите топ-10 приложений<br>в AppStore и Google Play</p>
+    <h2 class="order-title">Приложения</h2>
+    <p class="order-description">Покорите топ-10 приложений<br>в AppStore и Google Play</p>
     <a class="button" href="#">Заказать</a>
   </li>
   </ul>
   <ul class="picture-list">
     <li class="picture-items">
       <img class="present-logo" src="img/illustration3.jpg" width="300" height="146" alt="Презентации">
-      <h2 class="present-title">Презентации</h2>
-      <p class="present-description">Вы даже не подозреваете,<br> насколько вы изумительны!</p>
+      <h2 class="order-title">Презентации</h2>
+      <p class="order-description">Вы даже не подозреваете,<br> насколько вы изумительны!</p>
       <a class="button" href="#">Заказать</a>
     </li>
     </ul>
@@ -107,23 +107,23 @@
 
 <section class="brand-section">
 <ul class="brand-list">
-  <li class="brand-items">
-    <a class="button" href="#">
+  <li class="brand-item">
+    <a class="brand-item-link" href="#">
       <img class="html-logo" src="img/logohtmlacademy1.png" width="199" height="57" alt="Академия">
     </a>
   </li>
-  <li class="brand-items">
-    <a class="button" href="#">
+  <li class="brand-item">
+    <a class="brand-item-link" href="#">
       <img class="borodinski-logo" src="img/borodinski.png" width="209" height="90" alt="Бородач">
     </a>
   </li>
-  <li class="brand-items">
-    <a class="button" href="#">
+  <li class="brand-item">
+    <a class="brand-item-link" href="#">
       <img class="pink-logo" src="img/pink.png" width="185" height="52" alt="Розовый">
     </a>
   </li>
-  <li class="brand-items">
-    <a class="button" href="#">
+  <li class="brand-item">
+    <a class="brand-item-link" href="#">
       <img class="mishka-logo" src="img/mishka.png" width="173" height="84" alt="Мишка">
     </a>
   </li>
@@ -160,11 +160,10 @@
   </a>
 </footer>
 
-<div class="button">
-  <h3 class="popup-title">Напишите нам</h3>
-  <form action="/" method="post">
+<div class="modal-content">
+  <form class="login-form" action="/" method="post">
   <p class="popup-description">
-    <label class="user-name" for="login">Ваше имя</label>
+    <label class="user-name" for="login">Ваше имя:</label>
     <input class="user-login" type="text" id="login" name="login" placeholder="Имя Фамилия"></p>
     <p class="popup-description">
     <label class="user-adress" for="email">Ваш email:</label>
@@ -175,7 +174,7 @@
   </p>
   <button class="button" type="submit">Отправить</button>
   </form>
-  <button class="button" type="button">Х</button>
+  <button class="modal-close" type="button">Х</button>
 </div>
 
   </body>
