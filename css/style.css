@@ -19,8 +19,8 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
-  width: 1440;
+  font-family: "Roboto", "Arial", sans-serif;
+  width: 1440px;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -30,22 +30,10 @@ body {
   color: var(--basic-grafit);
 }
 
-h1,
-h2,
-h3,
-h4,
-p {
-  margin: 0;
-}
-
 a {
   text-decoration: none;
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
 
 /* button */
 .button {
@@ -68,6 +56,8 @@ ul {
   line-height: 30px;
   font-size: 16px;
   color: var(--basic-black);
+  margin: 0;
+  padding: 0;
 }
 
 /* Section */
@@ -86,9 +76,15 @@ ul {
   font-size: 55px;
   line-height: 55px;
   font-weight: 600;
+  margin: 0;
 }
 
 /* Order-Section */
+.picture-list {
+  padding: 0;
+  margin: 0;
+}
+
 .orders-section {
   padding: 0;
   margin: 0;
@@ -104,9 +100,15 @@ ul {
   font-weight: 600;
   color: var(--basic-black);
   text-transform: uppercase;
+  margin: 0;
 }
 
 /* Present-section */
+.present-list {
+  margin: 0;
+  padding: 0;
+}
+
 .present-section {
   color: var(--basic-grafit);
   font-size: 16px;
@@ -119,6 +121,7 @@ ul {
   font-size: 45px;
   line-height: 45px;
   font-weight: 400;
+  margin: 0;
 }
 
 /* Statistic-percent */
@@ -126,14 +129,22 @@ ul {
   color: var(--basic-black);
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
 }
 
 .stat-list {
+  margin: 0;
+  padding: 0;
   font-size: 45px;
   line-height: 64px;
   font-weight: 600;
   color: var(--basic-black);
   text-align: center;
+}
+
+.brand-list {
+  margin: 0;
+  padding: 0;
 }
 
 .stat-items sup {
@@ -156,12 +167,14 @@ ul {
   font-weight: 600;
   line-height: 30px;
   color: var(--basic-black);
+  margin: 0;
 }
 
 .preview-description {
   color: var(--basic-dim-grey);
   font-size: 16px;
   line-height: 18px;
+  margin: 0;
 }
 
 .user-name {
@@ -171,7 +184,7 @@ ul {
   font-weight: 600;
 }
 
-.user-adress {
+.user-address {
   color: var(--basic-black);
   font-size: 16px;
   line-height: 18px;
@@ -184,12 +197,14 @@ ul {
   font-size: 36px;
   line-height: 36px;
   font-weight: 600;
+  margin: 0;
 }
 
 .preview-description {
   color: var(--basic-shades-charcoal);
   font-size: 16px;
   line-height: 22px;
+  margin: 0;
 }
 
 .footer-icon {
@@ -202,6 +217,7 @@ ul {
     font-size: 55px;
     line-height: 55px;
     font-weight: 500;
+    margin: 0;
 }
 
 .cost {
@@ -223,6 +239,7 @@ ul {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+    margin: 0;
 }
 
 .grid-title {
@@ -230,9 +247,10 @@ ul {
     font-size: 18px;
     line-height: 30px;
     font-weight: 700;
+    margin: 0;
 }
 
-.radio-name {
+.radio-name { 
     color: var(--basic-black);
     font-size: 16px;
     line-height: 20px;
