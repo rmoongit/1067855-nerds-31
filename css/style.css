@@ -28,6 +28,15 @@ body {
   font-weight: 400;
   background-color: var(--basic-white);
   color: var(--basic-grafit);
+
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.page {
+  height: 100%;
 }
 
 a {
@@ -44,14 +53,50 @@ a {
 }
 
 /*  Header */
+.main-header {
+margin: 0;
+outline: 5px solid rgba(0, 255, 0, 0.7);
+outline-offset: -5px;
+}
+
+.main-header-logo {
+  order: 0;
+  justify-self: start;
+  outline: 5px solid rgba(200, 0, 0, 0.5);
+  outline-offset: -5px;
+}
+
 .main-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 48px;
+  padding-left: 140px;
+  padding-right: 140px;
   line-height: 30px;
   font-size: 16px;
   color: var(--basic-black);
   background-color: var(--basic-light-grey);
 }
 
+.main-navigation-wrapper {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr max-content;
+  outline: 5px solid rgb(100, 0, 0, 0.4);
+  outline-offset: -5px;
+  width: 1200px;
+  max-height: 140px;
+
+}
+
 .list-navigation {
+  display: grid;
+  grid-gap: 45px;
+  grid-template-columns: repeat(4, min-content);
+  justify-content: center;
+  align-content: center;
   list-style: none;
   line-height: 30px;
   font-size: 16px;
@@ -60,8 +105,17 @@ a {
   padding: 0;
 }
 
+.user-navigation {
+  justify-self: end;
+  outline: 5px solid rgba(200, 0, 0, 0.5);
+  outline-offset: -5px;
+}
+
 /* Section */
 .main-section {
+  display: grid;
+  width: 100%;
+  height: 431px;
   line-height: 24px;
   font-size: 16px;
   color: var(--basic-grafit);
@@ -69,13 +123,22 @@ a {
   background-image: url("../img/nerds-index-slide1.png");
   background-repeat: no-repeat;
   background-position: right;
+  outline: 5px solid rgba(0, 47, 255, 0.7);
+  outline-offset: -5px;
 }
 
 .main-title {
+  padding-top: 78px;
+  padding-left: 140px;
   color: var(--basic-black);
   font-size: 55px;
   line-height: 55px;
   font-weight: 600;
+  margin: 0;
+}
+
+.paragraph-main-title {
+  padding-left: 140px;
   margin: 0;
 }
 
@@ -192,6 +255,12 @@ a {
 }
 
 /* Footer */
+.main-footer {
+  background-color: var(--basic-white);
+  outline-offset: -5px;
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+}
+
 .footer-title {
   color: var(--basic-black);
   font-size: 36px;
