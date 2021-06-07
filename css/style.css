@@ -28,11 +28,6 @@ body {
   font-weight: 400;
   background-color: var(--basic-white);
   color: var(--basic-grafit);
-
-  min-height: 100%;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
 }
 
 .page {
@@ -52,6 +47,11 @@ a {
   border: none;
 }
 
+.button-info {
+  grid-column: 1/span 5;
+  grid-row-start: 3;
+}
+
 /*  Header */
 .main-header {
 margin: 0;
@@ -60,39 +60,25 @@ outline-offset: -5px;
 }
 
 .main-header-logo {
-  order: 0;
-  justify-self: start;
+  grid-column: 1/2 span;
   outline: 5px solid rgba(200, 0, 0, 0.5);
   outline-offset: -5px;
 }
 
 .main-nav {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 40px;
   align-items: center;
-  margin: 0 auto;
-  padding-top: 48px;
-  padding-left: 140px;
-  padding-right: 140px;
   line-height: 30px;
   font-size: 16px;
   color: var(--basic-black);
   background-color: var(--basic-light-grey);
 }
 
-.main-navigation-wrapper {
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr max-content;
-  outline: 5px solid rgb(100, 0, 0, 0.4);
-  outline-offset: -5px;
-  width: 1200px;
-  max-height: 140px;
-
-}
-
 .list-navigation {
   display: grid;
+  grid-column-start: 4;
   grid-gap: 45px;
   grid-template-columns: repeat(4, min-content);
   justify-content: center;
@@ -105,31 +91,41 @@ outline-offset: -5px;
   padding: 0;
 }
 
-.user-navigation {
-  justify-self: end;
+.login-link {
+  grid-column: -1/span 2;
   outline: 5px solid rgba(200, 0, 0, 0.5);
   outline-offset: -5px;
 }
 
 /* Section */
+
 .main-section {
   display: grid;
-  width: 100%;
-  height: 431px;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 40px;
   line-height: 24px;
   font-size: 16px;
   color: var(--basic-grafit);
   background-color: var(--basic-light-grey);
-  background-image: url("../img/nerds-index-slide1.png");
-  background-repeat: no-repeat;
-  background-position: right;
   outline: 5px solid rgba(0, 47, 255, 0.7);
   outline-offset: -5px;
 }
 
+.main-section-block {
+  grid-column: 1/span 4;
+  outline: 5px solid rgba(166, 187, 47, 0.7);
+  outline-offset: -5px;
+}
+
+.section-slide-block {
+  grid-column: 5/span 8;
+  outline: 5px solid rgba(30, 158, 218, 0.7);
+  outline-offset: -5px;
+  width: 760px;
+}
+
 .main-title {
-  padding-top: 78px;
-  padding-left: 140px;
+  grid-column: 1/span 12;
   color: var(--basic-black);
   font-size: 55px;
   line-height: 55px;
@@ -138,23 +134,37 @@ outline-offset: -5px;
 }
 
 .paragraph-main-title {
-  padding-left: 140px;
+  grid-row-start: 2;
+  grid-column: 1/span 11;
   margin: 0;
 }
 
 /* Order-Section */
+
 .picture-list {
   padding: 0;
   margin: 0;
 }
 
 .orders-section {
+  outline: 5px solid rgba(255, 0, 0, 0.7);
+  outline-offset: -5px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 40px;  
   padding: 0;
   margin: 0;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-grafit);
   background-color: var(--basic-white);
+}
+
+.picture-list {
+  grid-column: span 4;
+  list-style: none;
+  outline: 5px solid rgba(218, 30, 140, 0.7);
+  outline-offset: -5px;
 }
 
 .order-title {
@@ -173,10 +183,26 @@ outline-offset: -5px;
 }
 
 .present-section {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 40px;
   color: var(--basic-grafit);
   font-size: 16px;
   line-height: 24px;
   background-color: var(--basic-white);
+}
+
+.present-section-block {
+  outline: 5px solid rgba(0, 47, 255, 0.7);
+  outline-offset: -5px;
+  grid-column: span 7;
+}
+
+.stat-section-block {
+  text-align: center;
+  grid-column: span 4;
+  outline: 5px solid rgba(18, 230, 230, 0.7);
+  outline-offset: -5px;
 }
 
 .present-title {
@@ -196,6 +222,7 @@ outline-offset: -5px;
 }
 
 .stat-list {
+  list-style: none;
   margin: 0;
   padding: 0;
   font-size: 45px;
@@ -203,11 +230,6 @@ outline-offset: -5px;
   font-weight: 600;
   color: var(--basic-black);
   text-align: center;
-}
-
-.brand-list {
-  margin: 0;
-  padding: 0;
 }
 
 .stat-items sup {
@@ -223,6 +245,30 @@ outline-offset: -5px;
   line-height: 18px;
   text-align: center;
 }
+
+/* BRAND SECTION */
+.brand-section {
+  outline: 5px solid rgba(166, 187, 47, 0.7);
+  outline-offset: -5px;
+}
+
+.brand-list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 40px;
+  list-style: none;
+}
+
+.brand-item {
+  grid-column: span 3;
+}
+
+/*MAP NAVIGATION*/
+
+.map-logo {
+  width: 100%;
+}
+
 
 /* Pop-up-section */
 .preview-title {
