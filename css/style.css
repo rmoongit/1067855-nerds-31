@@ -302,6 +302,9 @@ outline-offset: -5px;
 
 /* Footer */
 .main-footer {
+  display: grid;
+  grid-template: repeat(12, 1fr);
+  grid-column-gap: 40;
   background-color: var(--basic-white);
   outline-offset: -5px;
   outline: 5px solid rgba(255, 0, 0, 0.7);
@@ -327,7 +330,19 @@ outline-offset: -5px;
 }
 
 /*CATALOG*/
+.catalog-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 40px;
+  align-content: start;
+  outline: 5px solid rgba(245, 4, 24, 0.7);
+  outline-offset: -5px;
+}
+
 .catalog-title {
+    outline: 5px solid rgba(0, 255, 0, 0.7);
+    outline-offset: -5px;
+    grid-column: 1/-1;
     color: var(--basic-black);
     font-size: 55px;
     line-height: 55px;
@@ -335,7 +350,32 @@ outline-offset: -5px;
     margin: 0;
 }
 
+.container-aside {
+  grid-column: 1/span 3;
+  align-items: start;
+  outline: 5px solid rgba(218, 30, 140, 0.7);
+  outline-offset: -5px;
+}
+
+.sort-content {
+  grid-column: 5/-1;
+  outline: 5px solid rgba(0, 47, 255, 0.7);
+  outline-offset: -5px;
+}
+
+.main-image-content {
+grid-column: 5/-1;
+outline: 5px solid rgba(0, 255, 0, 0.7);
+outline-offset: -5px;
+margin: 0;
+}
+
+.map-section {
+  grid-column: 1/-1;
+}
+
 .cost {
+    margin: 0;
     color: var(--basic-black);
     font-size: 18px;
     line-height: 30px;
@@ -385,6 +425,11 @@ outline-offset: -5px;
 }
 
 /*CATALOG SORT GALLERY */
+
+.product-list {
+  list-style: none;
+}
+
 .popup-info {
     color: var(--basic-black);
     font-size: 18px;
