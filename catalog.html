@@ -1,40 +1,71 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
-    </head>
-    <meta charset="utf-8" />
-    <title>HTML Academy: Каталог</title>
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <meta charset="utf-8" />
+  <title>HTML Academy: Каталог</title>
+  <link rel="icon" href="favicon.ico" />
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <link rel="stylesheet" href="./css/style.css" />
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <a class="main-header-logo">
-          <img class="header-logo" src="img/nerds-logo.png" width="160" height="65" alt="Логотип Хедер">
+        <a class="main-header-logo" href="index.html">
+          <img
+            class="header-logo"
+            src="img/nerds-logo.png"
+            width="160"
+            height="65"
+            alt="Логотип Хедер"
+          />
         </a>
         <ul class="list-navigation">
-          <li class="nav-items"><a class="nav-items-link" href="#">Студия</a></li>
-          <li class="nav-items"><a class="nav-items-link" href="#">Клиенты</a></li>
-          <li class="nav-items"><a class="nav-items-link" href="#">Магазин</a></li>
-          <li class="nav-items"><a class="nav-items-link" href="#">Контакты</a></li>
+          <li class="nav-items">
+            <a class="nav-items-link" href="#">Студия</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-items-link" href="#">Клиенты</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-items-link" href="#">Магазин</a>
+          </li>
+          <li class="nav-items">
+            <a class="nav-items-link" href="#">Контакты</a>
+          </li>
         </ul>
-        <a class="login-link" href="#">Корзина
-        <img class="cart-logo" src="img/cart-icon.svg " width="15" height="11" alt="Корзина">
-      </a>
-      </nav> 
+        <a class="login-link" href="#"
+          >Корзина
+          <img
+            class="cart-logo"
+            src="img/cart-icon.svg "
+            width="15"
+            height="11"
+            alt="Корзина"
+          />
+        </a>
+      </nav>
     </header>
 
     <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     <main class="catalog-container">
       <aside class="container-aside">
-        <form action="/" method="get">
+        <form action="https://echo.htmlacademy.ru/" method="get">
           <p class="cost">Стоимость:</p>
           <p class="control-content">
-            <input class="control" type="range" id="cost" name="cost" min="0" max="100" />
+            <input
+              class="control"
+              type="range"
+              id="cost"
+              name="cost"
+              min="0"
+              max="100"
+            />
           </p>
-          <p class="cost-description">  
+          <p class="cost-description">
             <input class="cost-box" type="number" id="of" name="of" />
             <label class="cost-of" for="of">От</label>
             <input class="cost-box" type="number" id="to" name="to" />
@@ -44,7 +75,8 @@
           <fieldset class="field-grid">
             <legend class="grid-title">Сетка</legend>
             <p class="grid-description">
-              <input class="radio-button"
+              <input
+                class="radio-button"
                 type="radio"
                 name="grid"
                 id="adapt1"
@@ -54,34 +86,75 @@
               <label class="radio-name" for="adapt1">Адаптивная</label>
             </p>
             <p>
-              <input class="radio-button" type="radio" name="grid" id="fixed1" value="fixed" />
+              <input
+                class="radio-button"
+                type="radio"
+                name="grid"
+                id="fixed1"
+                value="fixed"
+              />
               <label class="radio-name" for="fixed1">Фиксированная</label>
             </p>
             <p>
-              <input class="radio-button" type="radio" name="grid" id="rubber1" value="rubber" />
+              <input
+                class="radio-button"
+                type="radio"
+                name="grid"
+                id="rubber1"
+                value="rubber"
+              />
               <label class="radio-name" for="rubber1">Резиновая</label>
             </p>
           </fieldset>
           <fieldset class="opt-field">
             <legend class="opt-title">Особенности:</legend>
             <p class="opt-description">
-              <input class="opt-box" type="checkbox" id="checkbox-label1" name="ch1" checked />
+              <input
+                class="opt-box"
+                type="checkbox"
+                id="checkbox-label1"
+                name="ch1"
+                checked
+              />
               <label class="opt-name" for="checkbox-label1">Слайдер</label>
             </p>
             <p class="opt-description">
-              <input class="opt-box" type="checkbox" id="checkbox-label2" name="ch2" />
-              <label class="opt-name" for="checkbox-label2">Блок преимуществ</label>
+              <input
+                class="opt-box"
+                type="checkbox"
+                id="checkbox-label2"
+                name="ch2"
+              />
+              <label class="opt-name" for="checkbox-label2"
+                >Блок преимуществ</label
+              >
             </p>
             <p class="opt-description">
-              <input class="opt-box" type="checkbox" id="checkbox-label3" name="ch3" checked />
+              <input
+                class="opt-box"
+                type="checkbox"
+                id="checkbox-label3"
+                name="ch3"
+                checked
+              />
               <label class="opt-name" for="checkbox-label3">Новости</label>
             </p>
             <p class="opt-description">
-              <input class="opt-box" type="checkbox" id="checkbox-label4" name="ch4" />
+              <input
+                class="opt-box"
+                type="checkbox"
+                id="checkbox-label4"
+                name="ch4"
+              />
               <label class="opt-name" for="checkbox-label4">Галерея</label>
             </p>
             <p class="opt-description">
-              <input class="opt-box" type="checkbox" id="checkbox-label5" name="ch5" />
+              <input
+                class="opt-box"
+                type="checkbox"
+                id="checkbox-label5"
+                name="ch5"
+              />
               <label class="opt-name" for="checkbox-label5">Корзина</label>
             </p>
           </fieldset>
@@ -91,7 +164,6 @@
 
       <div class="sort-content">
         <p class="sort-description">Сортировать:</p>
-
         <p class="sort-list">
           <button class="button-sort" type="button">По цене</button>
           <button class="button-sort" type="button">По типу</button>
@@ -99,187 +171,255 @@
           <button class="button-to-less" type="button">▼</button>
           <button class="button-to-more" type="button">▲</button>
         </p>
+        <div class="main-image-content">
+          <ul class="product-list">
+            <li class="product-item">
+              <div class="slider">
+                <div class="product-item-header">
+                  <span class="product-item-header-icon"> * </span>
+                  <span class="product-item-header-icon"> * </span>
+                  <span class="product-item-header-icon"> * </span>
+                </div>
+                <img
+                  class="slider-item-image"
+                  src="https://via.placeholder.com/359x578"
+                  width="359"
+                  height="578"
+                  alt=""
+                />
+                <div class="product-item-popup">
+                  <h3 class="popup-info">Sedona</h3>
+                  <p class="popup-description">
+                    Информационный сайт<br />для туристов
+                  </p>
+                  <a class="button" href="#">9 900 ₽</a>
+                </div>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="slider">
+                <div class="product-item-header">
+                  <span class="product-item-header-icon"> * </span>
+                  <span class="product-item-header-icon"> * </span>
+                  <span class="product-item-header-icon"> * </span>
+                </div>
+                <img
+                  class="slider-item-image"
+                  src="https://via.placeholder.com/359x578"
+                  width="359"
+                  height="578"
+                  alt=""
+                />
+                <div class="product-item-popup">
+                  <h3 class="popup-info">Pink app</h3>
+                  <p class="popup-description">
+                    Продуктовый лендинг<br />приложения для iOS и Android
+                  </p>
+                  <a class="button" href="#">9 900 ₽</a>
+                </div>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="slider">
+                <div class="product-item-header">
+                  <span class="product-item-header-icon"> * </span>
+                  <span class="product-item-header-icon"> * </span>
+                  <span class="product-item-header-icon"> * </span>
+                </div>
+                <img
+                  class="slider-item-image"
+                  src="https://via.placeholder.com/359x578"
+                  width="359"
+                  height="578"
+                  alt=""
+                />
+                <div class="product-item-popup">
+                  <h3 class="popup-info">Hair cut</h3>
+                  <p class="popup-description">
+                    Барбер шоп<br />подстригись и подстриги других
+                  </p>
+                  <a class="button" href="#">9 900 ₽</a>
+                </div>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="slider">
+                <div class="product-item-header">
+                  <span class="product-item-header-icon"> * </span>
+                  <span class="product-item-header-icon"> * </span>
+                  <span class="product-item-header-icon"> * </span>
+                </div>
+                <img
+                  class="slider-item-image"
+                  src="https://via.placeholder.com/359x578"
+                  width="359"
+                  height="578"
+                  alt=""
+                />
+                <div class="product-item-popup">
+                  <h3 class="popup-info">Hand made</h3>
+                  <p class="popup-description">Вяжу сама<br />для туристов</p>
+                  <a class="button" href="#">9 900 ₽</a>
+                </div>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="slider">
+                <div class="product-item-header">
+                  <span class="product-item-header-icon"> * </span>
+                  <span class="product-item-header-icon"> * </span>
+                  <span class="product-item-header-icon"> * </span>
+                </div>
+                <img
+                  class="slider-item-image"
+                  src="https://via.placeholder.com/359x578"
+                  width="359"
+                  height="578"
+                  alt=""
+                />
+                <div class="product-item-popup">
+                  <h3 class="popup-info">Study</h3>
+                  <p class="popup-description">
+                    Учись пока не поздно<br />онлайн
+                  </p>
+                  <a class="button" href="#">9 900 ₽</a>
+                </div>
+              </div>
+            </li>
+            <li class="product-item">
+              <div class="slider">
+                <div class="product-item-header">
+                  <span class="product-item-header-icon"> * </span>
+                  <span class="product-item-header-icon"> * </span>
+                  <span class="product-item-header-icon"> * </span>
+                </div>
+                <img
+                  class="slider-item-image"
+                  src="https://via.placeholder.com/359x578"
+                  width="359"
+                  height="578"
+                  alt=""
+                />
+                <div class="product-item-popup">
+                  <h3 class="popup-info">Кваст</h3>
+                  <p class="popup-description">
+                    Промо-сайт производителя<br />крафтового кваса
+                  </p>
+                  <a class="button" href="#">9 900 ₽</a>
+                </div>
+              </div>
+            </li>
+          </ul>
+          <div class="pagination-content">
+            <button class="pagination" type="button">1</button>
+            <button class="pagination" type="button">2</button>
+            <button class="pagination" type="button">3</button>
+            <button class="pagination" type="button">Следующая</button>
+          </div>
+        </div>
       </div>
+    </main>
 
-      <section class="main-image-content">
-        <ul class="product-list">
-          <li class="product-item">
-            <div class="slider">
-              <div class="product-item-header">
-                <span class="product-item-header-icon"> * </span>
-                <span class="product-item-header-icon"> * </span>
-                <span class="product-item-header-icon"> * </span>
-              </div>
-              <img class="slider-item-image"
-                src="https://via.placeholder.com/359x578"
-                width="359"
-                height="578"
-                alt=""
-              />
-              <div class="product-item-popup">
-                <h3 class="popup-info">Sedona</h3>
-                <p class="popup-description">Информационный сайт<br>для туристов</p>
-                <a class="button" href="#">9 900 ₽</a>
-              </div>
-            </div>
-          </li>
-          <li class="product-item">
-            <div class="slider">
-              <div class="product-item-header">
-                <span class="product-item-header-icon"> * </span>
-                <span class="product-item-header-icon"> * </span>
-                <span class="product-item-header-icon"> * </span>
-              </div>
-              <img class="slider-item-image"
-                src="https://via.placeholder.com/359x578"
-                width="359"
-                height="578"
-                alt=""
-              />
-              <div class="product-item-popup">
-                <h3 class="popup-info">Pink app</h3>
-                <p class="popup-description">Продуктовый лендинг<br>приложения для iOS и Android</p>
-                <a class="button" href="#">9 900 ₽</a>
-              </div>
-            </div>
-          </li>
-          <li class="product-item">
-            <div class="slider">
-              <div class="product-item-header">
-                <span class="product-item-header-icon"> * </span>
-                <span class="product-item-header-icon"> * </span>
-                <span class="product-item-header-icon"> * </span>
-              </div>
-              <img class="slider-item-image"
-                src="https://via.placeholder.com/359x578"
-                width="359"
-                height="578"
-                alt=""
-              />
-              <div class="product-item-popup">
-                <h3 class="popup-info">Hair cut</h3>
-                <p class="popup-description">Барбер шоп<br>подстригись и подстриги других</p>
-                <a class="button" href="#">9 900 ₽</a>
-              </div>
-            </div>
-          </li>
-          <li class="product-item">
-            <div class="slider">
-              <div class="product-item-header">
-                <span class="product-item-header-icon"> * </span>
-                <span class="product-item-header-icon"> * </span>
-                <span class="product-item-header-icon"> * </span>
-              </div>
-              <img class="slider-item-image"
-                src="https://via.placeholder.com/359x578"
-                width="359"
-                height="578"
-                alt=""
-              />
-              <div class="product-item-popup">
-                <h3 class="popup-info">Hand made</h3>
-                <p class="popup-description">Вяжу сама<br>для туристов</p>
-                <a class="button" href="#">9 900 ₽</a>
-              </div>
-            </div>
-          </li>
-          <li class="product-item">
-            <div class="slider">
-              <div class="product-item-header">
-                <span class="product-item-header-icon"> * </span>
-                <span class="product-item-header-icon"> * </span>
-                <span class="product-item-header-icon"> * </span>
-              </div>
-              <img class="slider-item-image"
-                src="https://via.placeholder.com/359x578"
-                width="359"
-                height="578"
-                alt=""
-              />
-              <div class="product-item-popup">
-                <h3 class="popup-info">Study</h3>
-                <p class="popup-description">Учись пока не поздно<br/>онлайн</p>
-                <a class="button" href="#">9 900 ₽</a>
-              </div>
-            </div>
-          </li>
-          <li class="product-item">
-            <div class="slider">
-              <div class="product-item-header">
-                <span class="product-item-header-icon"> * </span>
-                <span class="product-item-header-icon"> * </span>
-                <span class="product-item-header-icon"> * </span>
-              </div>
-              <img class="slider-item-image"
-                src="https://via.placeholder.com/359x578"
-                width="359"
-                height="578"
-                alt=""
-              />
-              <div class="product-item-popup">
-                <h3 class="popup-info">Кваст</h3>
-                <p class="popup-description">Промо-сайт производителя<br>крафтового кваса</p>
-                <a class="button" href="#">9 900 ₽</a>
-              </div>
-            </div>
-          </li>
-        </ul>
-        <div class="pagination-content">
-          <button class="pagination" type="button">1</button>
-          <button class="pagination" type="button">2</button>
-          <button class="pagination" type="button">3</button>
-          <button class="pagination" type="button">Следующая</button>
-        </div>
-      </section>
-
-      <section class="map-section">
-        <div class="map-container">
-          <img class="map-logo" src="img/map1.png" width="1440" height="416" alt="Карта города">
-          <div class="preview">
-            <h3 class="preview-title">NЁRDS DESIGN STUDIO</h3>
-            <p class="preview-description">наб. Реки Карповки,<br>5 лит П, Санкт-Петербург<br>+7 800 555-86-28</p>
-            <a class="button" href="#">Напишите нам</a>
-          </div>
-          <div class="pin">
-            <img class="pin-logo" src="img/mapmarker1.png" width="231" height="190" alt="пин карты">
-          </div>
-        </div>
-        </section>
-        
-        </main>
-        
-        <footer class="main-footer">
-          <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
-          <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
-        
-          <a class="footer-icon" href="#" target="_blank">
-            <img class="vk-logo" src="img/vk-icon.svg" width="81" height="81" alt="Вконтакте">
-          </a>
-          <a class="footer-icon" href="#" target="_blank">
-            <img class="fb-logo" src="img/fb-icon.svg" width="81" height="81" alt="Фейс бук">
-          </a>
-          <a class="footer-icon" href="#" target="_blank">
-            <img class="inst-logo" src="img/insta-icon.svg" width="81" height="81" alt="Фейс бук"> 
-          </a>
-        </footer>
-        
-        <div class="form-content">
-          <h3 class="popup-map-title">Напишите нам</h3>
-          <form class="form-post" action="/" method="post">
-          <p class="popup-map-description">
-            <label class="user-name" for="login">Ваше имя:</label>
-            <input class="user-login" type="text" id="login" name="login" placeholder="Имя Фамилия"></p>
-            <p class="popup-description">
-            <label class="user-address" for="email">Ваш email:</label>
-            <input class="user-email" type="email" id="email" name="login" placeholder="email@example.com"></p>
-            <p class="popup-description">
-            <label class="quote-area" for="comment">Текст письма</label>
-            <textarea class="area-text" name="comment" id="comment" cols="30" rows="10"></textarea>
+    <section class="map-section">
+      <div class="map-container">
+        <img
+          class="map-logo"
+          src="img/map1.png"
+          width="1440"
+          height="416"
+          alt="Карта города"
+        />
+        <div class="preview">
+          <h3 class="preview-title">NЁRDS DESIGN STUDIO</h3>
+          <p class="preview-description">
+            наб. Реки Карповки,<br />5 лит П, Санкт-Петербург<br />+7 800
+            555-86-28
           </p>
-          <button class="button" type="submit">Отправить</button>
-          </form>
-          <button class="button-close" type="button">Х</button>
+          <a class="button" href="#">Напишите нам</a>
         </div>
-          </body>
-        </html>
-        
+        <div class="pin">
+          <img
+            class="pin-logo"
+            src="img/mapmarker1.png"
+            width="231"
+            height="190"
+            alt="пин карты"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
+      <p class="footer-description">
+        Скидка 10% для друзей из социальных сетей.
+      </p>
+
+      <a class="footer-icon" href="#" target="_blank">
+        <img
+          class="vk-logo"
+          src="img/vk-icon.svg"
+          width="81"
+          height="81"
+          alt="Вконтакте"
+        />
+      </a>
+      <a class="footer-icon" href="#" target="_blank">
+        <img
+          class="fb-logo"
+          src="img/fb-icon.svg"
+          width="81"
+          height="81"
+          alt="Фейс бук"
+        />
+      </a>
+      <a class="footer-icon" href="#" target="_blank">
+        <img
+          class="inst-logo"
+          src="img/insta-icon.svg"
+          width="81"
+          height="81"
+          alt="Фейс бук"
+        />
+      </a>
+    </footer>
+
+    <div class="form-content">
+      <h3 class="popup-map-title">Напишите нам</h3>
+      <form class="form-post" action="/" method="post">
+        <p class="popup-map-description">
+          <label class="user-name" for="login">Ваше имя:</label>
+          <input
+            class="user-login"
+            type="text"
+            id="login"
+            name="login"
+            placeholder="Имя Фамилия"
+          />
+        </p>
+        <p class="popup-description">
+          <label class="user-address" for="email">Ваш email:</label>
+          <input
+            class="user-email"
+            type="email"
+            id="email"
+            name="login"
+            placeholder="email@example.com"
+          />
+        </p>
+        <p class="popup-description">
+          <label class="quote-area" for="comment">Текст письма</label>
+          <textarea
+            class="area-text"
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="10"
+          ></textarea>
+        </p>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="button-close" type="button">Х</button>
+    </div>
+  </body>
+</html>

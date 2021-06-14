@@ -38,7 +38,6 @@ a {
   text-decoration: none;
 }
 
-
 /* button */
 .button {
   background-color: var(--basic-red);
@@ -48,15 +47,15 @@ a {
 }
 
 .button-info {
-  grid-column: 1/span 5;
+  grid-column: 1 / span 5;
   grid-row-start: 3;
 }
 
 /*  Header */
 .main-header {
-margin: 0;
-outline: 5px solid rgba(0, 255, 0, 0.7);
-outline-offset: -5px;
+  margin: 0;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
 }
 
 .main-header-logo {
@@ -68,8 +67,7 @@ outline-offset: -5px;
 .main-nav {
   display: grid;
   grid-template-columns: 160px 1fr 75px;
-  grid-template-areas:
-  "header-logo list-navigation login-link";
+  grid-template-areas: "header-logo list-navigation login-link";
   align-items: center;
   line-height: 30px;
   font-size: 16px;
@@ -98,8 +96,7 @@ outline-offset: -5px;
 .main-section {
   display: grid;
   grid-template-columns: 538px 760px;
-  grid-template-areas:
-  "main-block slide-block";
+  grid-template-areas: "main-block slide-block";
   line-height: 24px;
   font-size: 16px;
   color: var(--basic-grafit);
@@ -180,8 +177,7 @@ outline-offset: -5px;
 .present-section {
   display: grid;
   grid-template-columns: 651px 1fr;
-  grid-template-areas: 
-  "present-section-block stat-section-block";
+  grid-template-areas: "present-section-block stat-section-block";
   color: var(--basic-grafit);
   font-size: 16px;
   line-height: 24px;
@@ -259,6 +255,11 @@ outline-offset: -5px;
   width: 100%;
 }
 
+.map-container {
+margin: 0;
+padding: 0;
+}
+
 /* Pop-up-section */
 .preview-title {
   font-size: 18px;
@@ -317,7 +318,7 @@ outline-offset: -5px;
 
 /*CATALOG*/
 .catalog-container {
-  grid-template-columns: 260px 760px;
+  grid-template-columns: 220px 1fr;
   column-gap: 140px;
   grid-template-areas: "aside sort-content";
   grid-auto-rows: min-content;
@@ -327,15 +328,15 @@ outline-offset: -5px;
   outline-offset: -5px;
 }
 
-  .catalog-title {
-    outline: 5px solid rgba(0, 255, 0, 0.7);
-    outline-offset: -5px;
-    color: var(--basic-black);
-    background-color: var(--basic-light-grey);
-    font-size: 55px;
-    line-height: 55px;
-    font-weight: 500;
-    margin: 0;
+.catalog-title {
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+  color: var(--basic-black);
+  background-color: var(--basic-light-grey);
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+  margin: 0;
 }
 
 .container-aside {
@@ -351,76 +352,79 @@ outline-offset: -5px;
 }
 
 .main-image-content {
-grid-column: 2/-1;
-outline: 5px solid rgba(0, 255, 0, 0.7);
-outline-offset: -5px;
+  display: flex;
+  flex-direction: column;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
 }
 
 .cost {
-    margin: 0;
-    color: var(--basic-black);
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
+  margin: 0;
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
 }
 
-.cost-of, 
+.cost-of,
 .cost-to {
-    color: var(--basic-black);
-    font-size: 16px;
-    line-height: 22px;  
+  color: var(--basic-black);
+  font-size: 16px;
+  line-height: 22px;
 }
 
 .sort-description {
-    color: var(--basic-black);
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-    margin: 0;
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
 }
 
 .grid-title {
-    color: var(--basic-black);
-    font-size: 18px;
-    line-height: 30px;
-    font-weight: 700;
-    margin: 0;
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 0;
 }
 
-.radio-name { 
-    color: var(--basic-black);
-    font-size: 16px;
-    line-height: 20px;
+.radio-name {
+  color: var(--basic-black);
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .button-sort {
-    color: var(--basic-black);
-    font-size: 16px;
-    line-height: 18px;
-    font-weight: 500;
-} 
+  color: var(--basic-black);
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+}
 
 .opt-name {
-    color: var(--basic-black);
-    font-size: 16px;
-    line-height: 20px;  
+  color: var(--basic-black);
+  font-size: 16px;
+  line-height: 20px;
 }
 
 /*CATALOG SORT GALLERY */
 
 .product-list {
   list-style: none;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .popup-info {
-    color: var(--basic-black);
-    font-size: 18px;
-    line-height: 30px;  
-    font-weight: 700;
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 .popup-description {
-    color: var(--basic-dim-grey);
-    font-size: 16px;
-    line-height: 10px;  
+  color: var(--basic-dim-grey);
+  font-size: 16px;
+  line-height: 10px;
 }
