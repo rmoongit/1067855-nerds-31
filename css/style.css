@@ -47,8 +47,21 @@ a {
 }
 
 .button-info {
-  grid-column: 1 / span 5;
-  grid-row-start: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 240px;
+  height: 50px;
+  margin-top: 38px;
+  margin-left: 140px;
+  background-color: red;
+}
+
+.slider {
+display: flex;
+
+margin-left: 139px;
+margin-bottom: 96px;
 }
 
 /*  Header */
@@ -59,6 +72,9 @@ a {
 }
 
 .main-header-logo {
+  display: flex;
+  justify-self: start;
+  margin-left: 140px;
   grid-area: header-logo;
   outline: 5px solid rgba(200, 0, 0, 0.5);
   outline-offset: -5px;
@@ -66,7 +82,7 @@ a {
 
 .main-nav {
   display: grid;
-  grid-template-columns: 160px 1fr 75px;
+  grid-template-columns: 160px 1fr 115px;
   grid-template-areas: "header-logo list-navigation login-link";
   align-items: center;
   line-height: 30px;
@@ -77,6 +93,10 @@ a {
 
 .list-navigation {
   grid-area: list-navigation;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  column-gap: 45px;
   list-style: none;
   line-height: 30px;
   font-size: 16px;
@@ -86,13 +106,21 @@ a {
 }
 
 .login-link {
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 0;
   grid-area: login-link;
   outline: 5px solid rgba(200, 0, 0, 0.5);
   outline-offset: -5px;
 }
 
-/* Section */
+.cart-logo {
+  display: flex;
+  align-self: center;
+  margin-right: 25px;
+}
 
+/* Section */
 .main-section {
   display: grid;
   grid-template-columns: 538px 760px;
@@ -123,11 +151,13 @@ a {
   font-size: 55px;
   line-height: 55px;
   font-weight: 600;
-  margin: 0;
+  margin-top: 75px;
+  margin-left: 140px;
 }
 
 .paragraph-main-title {
-  margin: 0;
+  margin-left: 140px;
+  margin-top: 25px;
 }
 
 /* Order-Section */
