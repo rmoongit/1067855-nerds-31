@@ -18,9 +18,19 @@
   --basic-yellow: #efc849;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: "Roboto", "Arial", sans-serif;
-  width: 1440px;
+  width: 100%;
   margin: 0;
   padding: 0;
   font-size: 16px;
@@ -40,10 +50,17 @@ a {
 
 /* button */
 .button {
+  display: flex;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  width: 160px;
+  margin-top: 32px;
   background-color: var(--basic-red);
   color: var(--basic-white);
   text-align: center;
   border: none;
+  font-size: 16px;
+  line-height: 18px;
 }
 
 .button-info {
@@ -57,16 +74,9 @@ a {
   background-color: red;
 }
 
-.slider {
-display: flex;
-
-margin-left: 139px;
-margin-bottom: 96px;
-}
-
 /*  Header */
 .main-header {
-  margin: 0;
+  margin: 0 auto;
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
 }
@@ -81,6 +91,7 @@ margin-bottom: 96px;
 }
 
 .main-nav {
+  padding-top: 48px;
   display: grid;
   grid-template-columns: 160px 1fr 115px;
   grid-template-areas: "header-logo list-navigation login-link";
@@ -108,7 +119,7 @@ margin-bottom: 96px;
 .login-link {
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 0;
+  margin-right: 140px;
   grid-area: login-link;
   outline: 5px solid rgba(200, 0, 0, 0.5);
   outline-offset: -5px;
@@ -123,6 +134,7 @@ margin-bottom: 96px;
 /* Section */
 .main-section {
   display: grid;
+  justify-content: center;
   grid-template-columns: 538px 760px;
   grid-template-areas: "main-block slide-block";
   line-height: 24px;
@@ -140,10 +152,18 @@ margin-bottom: 96px;
 }
 
 .section-slide-block {
+  position: relative;
   grid-area: slide-block;
   outline: 5px solid rgba(30, 158, 218, 0.7);
   outline-offset: -5px;
-  width: 760px;
+}
+
+.slider {
+  position: absolute;
+  display: flex;
+  column-gap: 17px;
+  left: 139px;
+  bottom: 96px;
 }
 
 .main-title {
@@ -174,16 +194,20 @@ margin-bottom: 96px;
   grid-auto-rows: min-content;
   justify-content: center;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  margin-top:  80px;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-grafit);
   background-color: var(--basic-white);
   outline: 5px solid rgba(255, 0, 0, 0.7);
   outline-offset: -5px;
+  width: 1100px;
 }
 
 .picture-list {
+  display: flex;
+  justify-content: flex-start;
   list-style: none;
   outline: 5px solid rgba(218, 30, 140, 0.7);
   outline-offset: -5px;
@@ -195,16 +219,22 @@ margin-bottom: 96px;
   font-weight: 600;
   color: var(--basic-black);
   text-transform: uppercase;
-  margin: 0;
+  margin-top: 25px;
+}
+
+.order-description {
+margin-top: 16px;;
 }
 
 /* Present-section */
-.present-list {
-  margin: 0;
+.present-list .present-items {
+  list-style: none;
+  margin-top: 23px;
   padding: 0;
 }
 
 .present-section {
+  margin-top: 155px;
   display: grid;
   grid-template-columns: 651px 1fr;
   grid-template-areas: "present-section-block stat-section-block";
@@ -212,6 +242,9 @@ margin-bottom: 96px;
   font-size: 16px;
   line-height: 24px;
   background-color: var(--basic-white);
+  width: 1174px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .present-section-block {
@@ -233,6 +266,18 @@ margin-bottom: 96px;
   line-height: 45px;
   font-weight: 400;
   margin: 0;
+}
+
+.present-description {
+  margin-top: 32px;
+}
+
+.present-list-title {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 40px;
 }
 
 /* Statistic-percent */
@@ -269,13 +314,18 @@ margin-bottom: 96px;
 }
 
 /* BRAND SECTION */
-.brand-section {
+.brand-section {  
+  width: 1159;
+  margin-left: auto;
+  margin-right: auto;
   outline: 5px solid rgba(166, 187, 47, 0.7);
   outline-offset: -5px;
 }
 
 .brand-list {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   list-style: none;
 }
 
@@ -322,6 +372,10 @@ padding: 0;
 
 /* Footer */
 .main-footer {
+  display: flex;
+  width: 1060;
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--basic-white);
   outline-offset: -5px;
   outline: 5px solid rgba(255, 0, 0, 0.7);
@@ -343,6 +397,8 @@ padding: 0;
 }
 
 .footer-icon {
+  outline: 5px solid rgba(0, 47, 255, 0.7);
+  outline-offset: -5px;
   background-color: var(--basic-shades-charcoal);
 }
 
@@ -367,6 +423,10 @@ padding: 0;
   line-height: 55px;
   font-weight: 500;
   margin: 0;
+}
+
+.picture-items {
+  min-height: 347px;
 }
 
 .container-aside {
