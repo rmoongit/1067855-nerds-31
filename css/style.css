@@ -254,11 +254,57 @@ margin-top: 16px;;
 }
 
 .stat-section-block {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
   grid-area: stat-section-block;
   text-align: center;
   outline: 5px solid rgba(18, 230, 230, 0.7);
   outline-offset: -5px;
 }
+
+.stat-list {
+  display: flex;
+  column-gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: 45px;
+  line-height: 64px;
+  font-weight: 600;
+  color: var(--basic-black);
+  text-align: center;
+}
+
+.stat-section-logo {
+  display: flex;
+}
+
+/* Statistic-percent */
+.stat-title {
+  text-transform: uppercase;
+  color: var(--basic-black);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.stat-items sup {
+  color: var(--basic-black);
+  font-size: 26px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.stat-items-p {
+  color: var(--basic-grafit);
+  font-size: 16px;
+  line-height: 18px;
+  text-align: center;
+  margin-top: 11px;
+}
+
 
 .present-title {
   color: var(--basic-black);
@@ -280,38 +326,6 @@ margin-top: 16px;;
   margin-top: 40px;
 }
 
-/* Statistic-percent */
-.stat-title {
-  color: var(--basic-black);
-  font-size: 16px;
-  line-height: 24px;
-  margin: 0;
-}
-
-.stat-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  font-size: 45px;
-  line-height: 64px;
-  font-weight: 600;
-  color: var(--basic-black);
-  text-align: center;
-}
-
-.stat-items sup {
-  color: var(--basic-black);
-  font-size: 26px;
-  line-height: 40px;
-  font-weight: 400;
-}
-
-.stat-items-p {
-  color: var(--basic-grafit);
-  font-size: 16px;
-  line-height: 18px;
-  text-align: center;
-}
 
 /* BRAND SECTION */
 .brand-section {  
@@ -373,7 +387,10 @@ padding: 0;
 /* Footer */
 .main-footer {
   display: flex;
-  width: 1060;
+  column-gap: 9px;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 1060px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--basic-white);
@@ -382,11 +399,26 @@ padding: 0;
 }
 
 .footer-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0px;
   color: var(--basic-black);
   font-size: 36px;
+  padding: 0;
   line-height: 36px;
   font-weight: 600;
-  margin: 0;
+}
+
+.footer-description {
+  margin: 0 auto; 
+  margin-top: 10px;
+  padding: 0;
+}
+
+.footer-icon {
+  display: flex;
+  order: -1;
+  background-color: var(--basic-shades-charcoal);
 }
 
 .preview-description {
@@ -396,11 +428,7 @@ padding: 0;
   margin: 0;
 }
 
-.footer-icon {
-  outline: 5px solid rgba(0, 47, 255, 0.7);
-  outline-offset: -5px;
-  background-color: var(--basic-shades-charcoal);
-}
+
 
 /*CATALOG*/
 .catalog-container {
