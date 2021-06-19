@@ -543,6 +543,16 @@ a {
   outline-offset: -5px;
 }
 
+.field-grid {
+  outline: 5px solid rgba(18, 230, 230, 0.7);
+  outline-offset: -5px;
+}
+
+.opt-field {
+  outline: 5px solid rgba(18, 230, 230, 0.7);
+  outline-offset: -5px;
+}
+
 .sort-content {
   grid-area: sort-content;
   outline: 5px solid rgba(0, 47, 255, 0.7);
@@ -562,9 +572,18 @@ a {
 }
 
 .control-content  {
+  margin-top: 48px;
   height: 80px;
   text-align: center;
   background-color: var(--basic-light-grey);
+}
+
+.cost-title {
+  margin: 0;
+  color: var(--basic-black);
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
 }
 
 .control {
@@ -575,25 +594,32 @@ a {
   -webkit-appearance: none;
 }
 
-.cost {
-  margin: 0;
-  color: var(--basic-black);
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
+.cost-description {
+  display: flex;
+  justify-content: space-between;
 }
 
 .cost-box {
   background-color: var(--basic-light-grey);
   border: none;
-  text-align: center  ;
+  text-align: center;
+  height: 38px;
+  width: 80px;
+  float: right;
 }
 
-.cost-of,
-.cost-to {
+.cost-text {
   color: var(--basic-black);
   font-size: 16px;
   line-height: 22px;
+}
+
+.cost-contain {
+  column-gap: 10px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-bottom: 0px;
 }
 
 .sort-description {

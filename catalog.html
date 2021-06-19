@@ -1,61 +1,61 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="favicon.ico">
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>HTML Academy: Каталог</title>
     <meta charset="utf-8">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"
-      rel="stylesheet"
-    >
   </head>
 
   <body>
-    <header class="main-header">
-      <nav class="main-nav">
-        <a class="main-header-logo" href="index.html">
-          <img
-            class="header-logo"
-            src="img/nerds-logo.png"
-            width="160"
-            height="65"
-            alt="Логотип Хедер"
-          >
-        </a>
-        <ul class="list-navigation">
-          <li class="nav-items">
-            <a class="nav-items-link" href="#">Студия</a>
-          </li>
-          <li class="nav-items">
-            <a class="nav-items-link" href="#">Клиенты</a>
-          </li>
-          <li class="nav-items">
-            <a class="nav-items-link" href="#">Магазин</a>
-          </li>
-          <li class="nav-items">
-            <a class="nav-items-link" href="#">Контакты</a>
-          </li>
-        </ul>
-        <a class="login-link" href="#"
-          >Корзина
-          <img
-            class="cart-logo"
-            src="img/cart-icon.svg "
-            width="15"
-            height="11"
-            alt="Корзина"
-          />
-        </a>
-      </nav>
-    </header>
-
+    <section class="header-title-container">
+      <header class="main-header">
+        <nav class="main-nav">
+          <a class="main-header-logo" href="index.html">
+            <img
+              class="header-logo"
+              src="img/nerds-logo.png"
+              width="160"
+              height="65"
+              alt="Логотип Хедер"
+            >
+          </a>
+          <ul class="list-navigation">
+            <li class="nav-items">
+              <a class="nav-items-link" href="#">Студия</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-items-link" href="#">Клиенты</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-items-link" href="#">Магазин</a>
+            </li>
+            <li class="nav-items">
+              <a class="nav-items-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <a class="login-link" href="#"
+            >Корзина
+            <img
+              class="cart-logo"
+              src="img/cart-icon.svg "
+              width="15"
+              height="11"
+              alt="Корзина"
+            />
+          </a>
+        </nav>
+      </header>
     <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+    </section>
+  
     <main class="catalog-container">
       <aside class="container-aside">
         <form action="https://echo.htmlacademy.ru/" method="get">
-          <p class="cost">Стоимость:</p>
+          <div class="control-box">
+          <p class="cost-title">Стоимость:</p>
           <p class="control-content">
             <input
               class="control"
@@ -66,13 +66,17 @@
               max="100"
             />
           </p>
-          <p class="cost-description">
+          <div class="cost-description">
+            <p class="cost-contain">
             <input class="cost-box" type="number" id="of" name="of" />
-            <label class="cost-of" for="of">От</label>
+            <label class="cost-text" for="of">От</label>
+            </p>
+            <p class="cost-contain">
             <input class="cost-box" type="number" id="to" name="to" />
-            <label class="cost-to" for="to">До</label>
+            <label class="cost-text" for="to">До</label>
           </p>
-
+          </div>
+          </div> 
           <fieldset class="field-grid">
             <legend class="grid-title">Сетка</legend>
             <p class="grid-description">
@@ -351,39 +355,22 @@
     </section>
 
     <footer class="main-footer">
-      <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
-      <p class="footer-description">
-        Скидка 10% для друзей из социальных сетей.
-      </p>
-
-      <a class="footer-icon" href="#" target="_blank">
-        <img
-          class="vk-logo"
-          src="img/vk-icon.svg"
-          width="81"
-          height="81"
-          alt="Вконтакте"
-        />
-      </a>
-      <a class="footer-icon" href="#" target="_blank">
-        <img
-          class="fb-logo"
-          src="img/fb-icon.svg"
-          width="81"
-          height="81"
-          alt="Фейс бук"
-        />
-      </a>
-      <a class="footer-icon" href="#" target="_blank">
-        <img
-          class="inst-logo"
-          src="img/insta-icon.svg"
-          width="81"
-          height="81"
-          alt="Фейс бук"
-        />
-      </a>
-    </footer>
+      <div class="footer-describe-container">
+        <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
+        <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+      <div class="footer-icon-container">
+        <a class="footer-icon" href="#" target="_blank">
+          <img class="vk-logo" src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+        </a>
+        <a class="footer-icon" href="#" target="_blank">
+          <img class="fb-logo" src="img/fb-icon.svg" width="12" height="22" alt="Фейс бук">
+        </a>
+        <a class="footer-icon" href="#" target="_blank">
+          <img class="inst-logo" src="img/insta-icon.svg" width="21" height="21" alt="Фейс бук"> 
+        </a>
+      </div>
+      </footer>
 
     <div class="form-content">
       <h3 class="popup-map-title">Напишите нам</h3>
