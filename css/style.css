@@ -71,7 +71,8 @@ a {
   height: 50px;
   margin-top: 38px;
   margin-left: 140px;
-  background-color: red;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
 }
 
 /*  Header */
@@ -347,6 +348,8 @@ margin-top: 16px;;
 /*MAP NAVIGATION*/
 
 .map-section {
+  padding: 0;
+  margin: 0 auto;
   margin-top: 80px;
   outline-offset: -5px;
   outline: 5px solid rgba(218, 30, 140, 0.7);
@@ -358,17 +361,23 @@ margin-top: 16px;;
 
 .map-container {
 position: relative;
-margin: 0;
+margin: 0 auto;
 padding: 0;
 }
 
+.pin {
+background-color: cornflowerblue;
+position: absolute;
+right: 330px;
+top: 70px;
+}
+
+.pin-logo {
+}
 /* Pop-up-section */
 
 .preview {
-display: flex;
-flex-direction: column;
-justify-content: space-around;
-align-items: center;
+padding: 50px;
 top: 54px;
 left: 140px;
 position: absolute;
@@ -385,20 +394,27 @@ outline: 5px solid rgba(85, 177, 10, 0.7);
   color: var(--basic-black);
 }
 
-.preview-description {
+.preview-adress {
   color: var(--basic-dim-grey);
   font-size: 16px;
   line-height: 18px;
   margin: 0;
 }
 
+.phone-number {
+color: var(--basic-dim-grey);
+margin-bottom: 37px;
+}
+
 .map-button {
   text-transform: uppercase;
+  color: var(--basic-white);
   text-align: center;
-  background-color: lawngreen;
+  background-color: var(--basic-red);
   padding: 15px 44px;
   width: 219px;
   height: 50px;
+  margin-bottom: 47px;
 }
 
 .user-name {
@@ -420,7 +436,9 @@ outline: 5px solid rgba(85, 177, 10, 0.7);
   display: flex;
   column-gap: 10px;
   width: 1060px;
+  margin-bottom: 68px;
   max-height: 81px;
+  margin-top: 68px;
   margin-left: auto;
   margin-right: auto;
   background-color: var(--basic-white);
