@@ -501,7 +501,7 @@ a {
 /*CATALOG*/
 .header-title-container {
   background-color: var(--basic-light-grey);
-  width: 1440px;
+  width: 100%;
   height: 355px;
   margin-left: auto;
   margin-right: auto;
@@ -509,7 +509,7 @@ a {
   outline-offset: -5px;
 }
 
-.catalog-container {
+.catalog-box {
   margin-top: 55px;
   grid-template-columns: 260px 1fr;
   column-gap: 140px;
@@ -546,11 +546,23 @@ a {
 .field-grid {
   outline: 5px solid rgba(18, 230, 230, 0.7);
   outline-offset: -5px;
+  margin-top: 54px;
+  border: none;
 }
 
 .opt-field {
+  border: none;
   outline: 5px solid rgba(18, 230, 230, 0.7);
   outline-offset: -5px;
+  margin-top: 54px;
+}
+
+.opt-title  {
+  color: var(--basic-black);
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 .sort-content {
@@ -559,11 +571,21 @@ a {
   outline-offset: -5px;
 }
 
-.main-image-content {
+.sort-content-filter {
   display: flex;
-  flex-direction: column;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
+  justify-content: space-between;
+  align-items: flex-start;
+  outline: 5px solid rgba(166, 187, 47, 0.7);
   outline-offset: -5px;
+}
+
+.sort-list  {
+  display: flex;
+  column-gap: 25px;
+  outline: 5px solid rgba(18, 230, 230, 0.7);
+  outline-offset: -5px;
+  padding: 0;
+  margin-top: 0;
 }
 
 .control-box {
@@ -634,8 +656,9 @@ a {
   color: var(--basic-black);
   font-size: 18px;
   line-height: 30px;
-  font-weight: 700;
+  font-weight: 900;
   margin: 0;
+  text-transform: uppercase;
 }
 
 .radio-name {
@@ -651,6 +674,17 @@ a {
   font-weight: 500;
 }
 
+.button-show {
+  width: 260px;
+  height: 50px;
+  border: none;
+  margin-top: 48px;
+  text-align: center;
+  color: var(--basic-black);
+  font-weight: 600;
+  background-color: var(--basic-light-grey);
+}
+
 .opt-name {
   color: var(--basic-black);
   font-size: 16px;
@@ -658,11 +692,30 @@ a {
 }
 
 /*CATALOG SORT GALLERY */
+.main-image-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 48px;
+  outline: 5px solid rgba(0, 255, 0, 0.7);
+  outline-offset: -5px;
+  width: 760px;
+}
 
 .product-list {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  column-gap: 40px;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+}
+
+.pagination-content {
+  display: flex;
+  column-gap: 10px;
+  margin-top: 54px;
+
 }
 
 .popup-info {
