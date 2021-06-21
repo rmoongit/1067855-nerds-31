@@ -76,14 +76,13 @@ a {
   width: 240px;
   height: 50px;
   margin-top: 38px;
-  margin-left: 140px;
+  margin-left: 0;
   background-color: var(--basic-red);
   color: var(--basic-white);
 }
 
 /*  Header */
 .main-header {
-  margin: 0 auto;
   outline: 5px solid rgba(0, 255, 0, 0.7);
   outline-offset: -5px;
 }
@@ -91,7 +90,6 @@ a {
 .main-header-logo {
   display: flex;
   justify-self: start;
-  margin-left: 140px;
   grid-area: header-logo;
   outline: 5px solid rgba(200, 0, 0, 0.5);
   outline-offset: -5px;
@@ -123,10 +121,17 @@ a {
   padding: 0;
 }
 
+.nav-items-link {
+  color: var(--basic-black);
+  text-transform: uppercase;
+}
+
 .login-link {
+  color: var(--basic-black);
+  text-transform: uppercase;
   display: flex;
   flex-direction: row-reverse;
-  margin-right: 140px;
+  margin-right: 0px;
   grid-area: login-link;
   outline: 5px solid rgba(200, 0, 0, 0.5);
   outline-offset: -5px;
@@ -139,17 +144,20 @@ a {
 }
 
 /* Section */
-.main-section {
+.main-box {
+  height: 431px;
   display: grid;
   justify-content: center;
-  grid-template-columns: 538px 760px;
+  grid-template-columns: 400px 760px;
   grid-template-areas: "main-block slide-block";
   line-height: 24px;
   font-size: 16px;
   color: var(--basic-grafit);
   background-color: var(--basic-light-grey);
   outline: 5px solid rgba(0, 47, 255, 0.7);
-  outline-offset: -5px; 
+  outline-offset: -5px;
+  margin: 0 auto;
+  
 }
 
 .main-section-block {
@@ -179,11 +187,18 @@ a {
   line-height: 55px;
   font-weight: 600;
   margin-top: 75px;
-  margin-left: 140px;
+  margin: 0;
+  margin-top: 78px;
+}
+
+.slider-background-logo {
+  position: absolute;
+  right: 15px;
+  bottom: 5px;
 }
 
 .paragraph-main-title {
-  margin-left: 140px;
+  margin-left: 0;
   margin-top: 25px;
 }
 
@@ -500,12 +515,9 @@ a {
 
 
 /*CATALOG*/
-.header-title-container {
+.header-title-box {
   background-color: var(--basic-light-grey);
-  width: 100%;
   height: 355px;
-  margin-left: auto;
-  margin-right: auto;
   outline: 5px solid rgba(0, 47, 255, 0.7);
   outline-offset: -5px;
 }
