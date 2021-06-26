@@ -15,7 +15,12 @@
   --basic-red: #fb565a;
   --basic-dark-red: #e74246;
   --basic-green: #00ca74;
+  --basic-dark-green: #00BC6C;
+  --basic-more-dark-green: #00AA62;
   --basic-yellow: #efc849;
+  --basic-dark-yellow: #EAB534;
+  --basic-more-dark-yellow: #E5A722;
+  --basic-more-dark-red: #d7373b;
 }
 
 .visually-hidden {
@@ -69,6 +74,8 @@ a {
 /* button */
 .button {
   display: flex;
+  font-weight: 500;
+  font-size: 16px;
   justify-content: center;
   padding: 15px 40px;
   text-transform: uppercase;
@@ -78,8 +85,45 @@ a {
   color: var(--basic-white);
   text-align: center;
   border: none;
-  font-size: 16px;
-  line-height: 18px;
+  border-radius: 3px;
+}
+
+.red:hover {
+  background-color: var(--basic-dark-red);
+}
+
+.red:active {
+  background-color: var(--basic-more-dark-red);
+  color: rgba(255, 255, 255, 0.233);
+  box-shadow: inset 0 0 5px var(--basic-black);
+}
+
+.green {
+  background-color: var(--basic-green);
+}
+
+.green:hover {
+  background-color: var(--basic-dark-green);
+}
+
+.green:active {
+  background-color: var(--basic-more-dark-green);
+  color: rgba(255, 255, 255, 0.233);
+  box-shadow: inset 0 0 5px var(--basic-black);
+}
+
+.yellow {
+  background-color: var(--basic-yellow);
+}
+
+.yellow:hover {
+  background-color: var(--basic-dark-yellow);
+}
+
+.yellow:active{
+  background-color: var(--basic-more-dark-yellow);
+  color: rgba(255, 255, 255, 0.233);
+  box-shadow: inset 0 0 5px var(--basic-black);
 }
 
 .button-info {
@@ -89,13 +133,23 @@ a {
   width: 240px;
   height: 50px;
   margin-top: 38px;
-  margin-left: 0;
   padding: 15px 54px;
   background-color: var(--basic-red);
   color: var(--basic-white);
   text-transform: uppercase;
   font-weight: 500;
   border-radius: 3px;
+}
+
+.button-info:hover {
+  background-color: var(--basic-dark-red);
+}
+
+.button-info:active {
+background-color: var(--basic-more-dark-red);
+color: rgba(255, 255, 255, 0.233);
+box-shadow: inset 0 0 5px var(--basic-black);
+
 }
 
 /*  Header */
@@ -251,13 +305,13 @@ color: var(--basic-red);
   bottom: 5px;
 }
 
-.slider .slider-button {
+.slider-button-img {
   padding: 5px;
   width: 18px;
   height: 18px;
-  background-color: transparent;
-  border: 2px solid var(--basic-white);
+  background-color: var(--basic-white);
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .main-title {
@@ -288,13 +342,15 @@ color: var(--basic-red);
   grid-auto-rows: min-content;
   justify-content: start;
   padding: 0;
+  padding-bottom: 80px;
   margin-top:  80px;
   font-size: 16px;
   line-height: 24px;
   color: var(--basic-grafit);
   background-color: var(--basic-white);
-  outline: 5px solid rgba(255, 0, 0, 0.7);
-  outline-offset: -5px;
+  border-bottom: 2px solid var(--basic-light-grey);
+  /* outline: 5px solid rgba(255, 0, 0, 0.7); */
+  /* outline-offset: -5px; */
 }
 
 .picture-list {
@@ -306,27 +362,42 @@ color: var(--basic-red);
 }
 
 .order-title {
-  font-size: 24px;
+  margin-top: 25px;
   line-height: 30px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
-  margin-top: 25px;
+  /* margin-top: 25px; */
 }
 
 .order-description {
-  margin-top: 16px;;
+  margin-top: 0;
 }
 
 /* Present-section */
 .present-list .present-items {
+  display: flex;
+  align-items: center;
   list-style: none;
   margin-top: 23px;
   padding: 0;
 }
 
+.present-list {
+  padding: 0;
+}
+
+.present-items::before {
+  margin-right: 7px;
+  content: "";
+  display: block;
+  width: 25px;
+  height: 2px;
+  background-color: var(--basic-red);
+}
+
 .present-section {
-  margin-top: 155px;
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 651px 1fr;
   grid-template-areas: "present-section-block stat-section-block";
@@ -362,7 +433,7 @@ color: var(--basic-red);
   padding: 0;
   font-size: 45px;
   line-height: 64px;
-  font-weight: 600;
+  font-weight: 700;
   color: var(--basic-black);
   text-align: center;
 }
@@ -373,40 +444,47 @@ color: var(--basic-red);
 
 /* Statistic-percent */
 .stat-title {
+  margin-top: 37px;
+  margin-bottom: 30px;
   text-transform: uppercase;
   color: var(--basic-black);
   font-size: 16px;
   line-height: 24px;
+  font-weight: 700;
 }
 
 .stat-items sup {
   color: var(--basic-black);
   font-size: 26px;
   line-height: 40px;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .stat-items-p {
   color: var(--basic-grafit);
   font-size: 16px;
+  font-weight: 500;
   line-height: 18px;
-  text-align: center;
-  margin-top: 11px;
+  text-align: start;
+  margin: 10px 0;
 }
 
 .present-title {
   color: var(--basic-black);
   font-size: 45px;
   line-height: 45px;
-  font-weight: 400;
+  font-weight: 500;
   margin: 0;
+  padding-top: 25px;
+  padding-bottom: 0;
 }
 
 .present-description {
-  margin-top: 32px;
+  margin-top: 30px;
 }
 
 .present-list-title {
+  color: var(--basic-black);
   font-size: 16px;
   line-height: 24px;
   font-weight: 900;
@@ -426,6 +504,18 @@ color: var(--basic-red);
   align-items: center;
   justify-content: space-between;
   list-style: none;
+}
+
+.brand-item {
+opacity: 0.4;
+}
+
+.brand-item:hover {
+  opacity: 1;
+}
+
+.brand-item:active {
+opacity: 0.1;
 }
 
 /*MAP NAVIGATION*/
@@ -497,6 +587,16 @@ color: var(--basic-red);
   width: 219px;
   height: 50px;
   margin-bottom: 47px;
+}
+
+.map-button:hover {
+  background-color: var(--basic-dark-red);
+}
+
+.map-button:active {
+  background-color: var(--basic-more-dark-red);
+  color: rgba(255, 255, 255, 0.233);
+  box-shadow: inset 0 0 5px var(--basic-black);
 }
 
 .user-name {
