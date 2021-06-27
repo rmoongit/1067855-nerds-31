@@ -5,6 +5,7 @@
   --basic-dim-grey: #666666;
   --basic-normal-grey: #c1c1c1;
   --basic-ultra-grey: #d5d5d5;
+  --basic-grey-border: #D7DCDE;
   --basic-dark-grey: #888888;
   --basic-medium-grey: #dfdfdf;
   --basic-shades-charcoal: #444444;
@@ -668,23 +669,25 @@ opacity: 0.1;
   border-radius:50%;
 }
 
+.footer-icon:hover {
+  background-color: var(--basic-dark-red);
+}
+
+.footer-icon:active {
+  background-color: var(--basic-more-dark-red);
+  box-shadow: inset 0 3px 0 rgb(255, 0, 0,0.2);
+}
+
+.footer-icon:active .hide-in {
+  opacity: 0.2;
+}
+
 .preview-description {
   color: var(--basic-shades-charcoal);
   font-size: 16px;
   line-height: 22px;
   margin: 0;
 }
-
-.modal-content {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  outline: 5px solid rgba(200, 0, 0, 0.5);
-  outline-offset: -5px;
-  margin: 0 auto;
-  width: 319px;
-}
-
 
 /*CATALOG*/
 .header-title-box {
@@ -910,16 +913,110 @@ opacity: 0.1;
 
 }
 
-.popup-info {
-  color: var(--basic-black);
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
+/* POP-UP */
+.modal-content  {
+  display: block;
+  padding: 60px 100px 0 100px;
+  text-align: start;
+  position: fixed;
+  z-index: 4;
+  left: 195px;
+  top: 30px;
+  width: 960px;
+  outline: 5px solid rgba(200, 0, 0, 0.5);
+  outline-offset: -5px;
+  background-color: var(--basic-white);
 }
 
-.popup-description {
-  color: var(--basic-dim-grey);
+.login-form {
+  position: relative;
+}
+
+.modal-content-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-login,
+.user-email {
+  display: flex;
+  border-radius: 3px;
+  border: 2px solid var(--basic-dark-grey);
+  padding-left: 16px;
+  width: 360px;
+  height: 50px;
+}
+
+
+.area-text {
+  width: 100%;
+  padding: 16px;
+  line-height: 18px;
+  border-radius: 3px;
+  border: 2px solid var(--basic-dark-grey);
+  margin-top: 6px;
+}
+
+.login-form textarea {
+  min-height: 119px;
+}
+
+.popup-button {
+  margin-top: 47px;
+  width: 259px;
+  height: 50px;
+  cursor: pointer;
+  padding: 15px 15px;
+}
+
+.popup-title {
+font-weight: 700;
+font-size: 45px;
+line-height: 52px;
+color: var(--basic-black);
+text-align: start;
+margin-top: 0px;
+}
+
+.popup-description input {
+  margin-top: 6px;
+}
+
+.quote-area {
   font-size: 16px;
   line-height: 18px;
-  margin: 0;
+  font-weight: 700;
+  color: var(--basic-black);
 }
+
+.modal-close {
+  position: absolute;
+  right: 90px;
+  top: 75px;
+}
+
+.modal-close::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 27px;
+  height: 5px;
+  background-color: var(--basic-red);
+  transform: rotate(45deg);
+}
+
+.modal-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 27px;
+  height: 5px;
+  background-color: var(--basic-red);
+  transform: rotate(-45deg);
+}
+
+
+
+
