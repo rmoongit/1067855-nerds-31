@@ -513,10 +513,11 @@ color: var(--basic-red);
   margin-top: 73px;
   border-top: 2px solid var(--basic-light-grey);
   border-bottom: 2px solid var(--basic-light-grey);
-  padding: 65px 65px;
+  padding: 45px 45px;
 }
 
 .brand-list {
+  margin: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -567,7 +568,7 @@ opacity: 0.1;
 }
 
 .pin {
-  background-color: cornflowerblue;
+  background-color: transparent;
   position: absolute;
   right: 330px;
   top: 70px;
@@ -702,7 +703,7 @@ opacity: 0.1;
 
 .footer-icon:active {
   background-color: var(--basic-more-dark-red);
-  box-shadow: inset 0 3px 0 rgb(255, 0, 0,0.2);
+  box-shadow: inset 0 3px 0 rgba(255, 0, 0,0.1);
 }
 
 .footer-icon:active .hide-in {
