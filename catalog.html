@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
   <head>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet">
-    <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="./css/normalize.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/normalize.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>HTML Academy: Каталог</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
   </head>
 
   <body>
@@ -20,7 +23,7 @@
               width="160"
               height="65"
               alt="Логотип Хедер"
-            >
+            />
           </a>
           <ul class="list-navigation">
             <li class="nav-items">
@@ -37,41 +40,56 @@
             </li>
           </ul>
           <div class="user-navigation">
-            <a class="login-link" href="#">Корзина
-            <img class="cart-logo" src="img/cart-icon.svg " width="15" height="11" alt="Корзина">
-          </a>
-        </div>
+            <a class="login-link" href="#"
+              >Корзина
+              <img
+                class="cart-logo"
+                src="img/cart-icon.svg "
+                width="15"
+                height="11"
+                alt="Корзина"
+              />
+            </a>
+          </div>
         </nav>
       </header>
-    <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
     </section>
-  
+
     <main class="catalog-box container">
       <aside class="container-aside">
         <form action="https://echo.htmlacademy.ru/" method="get">
-          <div class="control-box">
-          <p class="cost-title">Стоимость:</p>
-          <p class="control-content">
-            <input
-              class="control"
-              type="range"
-              id="cost"
-              name="cost"
-              min="0"
-              max="100"
-            />
-          </p>
-          <div class="cost-description">
-            <p class="cost-contain">
-            <input class="cost-box" type="number" id="of" name="of" />
-            <label class="cost-text" for="of">От</label>
-            </p>
-            <p class="cost-contain">
-            <input class="cost-box" type="number" id="to" name="to" />
-            <label class="cost-text" for="to">До</label>
-          </p>
-          </div>
-          </div> 
+          <fieldset class="filter-item">
+            <legend class="cost-title">Стоимость:</legend>
+            <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="width: 30%; margin-left: 20%">
+                  </div>
+                </div>
+                <div
+                  class="toggle toggle-min"
+                  tabindex="0"
+                  style="left: 20%"
+                ></div>
+                <div
+                  class="toggle toggle-max"
+                  tabindex="0"
+                  style="left: 50%"
+                ></div>
+              </div>
+              <div class="cost-description">
+                <p class="cost-contain">
+                  <input class="cost-box" type="number" id="of" name="of" value="0" />
+                  <label class="cost-text" for="of">От</label>
+                </p>
+                <p class="cost-contain">
+                  <input class="cost-box" type="number" id="to" name="to" value="150000"/>
+                  <label class="cost-text" for="to">До</label>
+                </p>
+              </div>
+            </div>
+          </fieldset>
           <fieldset class="field-grid">
             <legend class="grid-title">Сетка:</legend>
             <p class="grid-description">
@@ -84,6 +102,7 @@
                 checked
               />
               <label class="radio-name" for="adapt1">Адаптивная</label>
+              <span class="radio-mark"></span>
             </p>
             <p>
               <input
@@ -94,6 +113,7 @@
                 value="fixed"
               />
               <label class="radio-name" for="fixed1">Фиксированная</label>
+              <span class="radio-mark"></span>
             </p>
             <p>
               <input
@@ -104,6 +124,7 @@
                 value="rubber"
               />
               <label class="radio-name" for="rubber1">Резиновая</label>
+              <span class="radio-mark"></span>
             </p>
           </fieldset>
           <fieldset class="opt-field">
@@ -164,15 +185,21 @@
 
       <div class="sort-content">
         <div class="sort-content-filter">
-        <p class="sort-description">Сортировать:</p>
-        <p class="sort-list">
-          <button class="button-sort" type="button">По цене</button>
-          <button class="button-sort" type="button">По типу</button>
-          <button class="button-sort" type="button">По названию</button>
-          <button class="button-to-less" type="button">▼</button>
-          <button class="button-to-more" type="button">▲</button>
-        </p>
-      </div>
+          <p class="sort-description">Сортировать:</p>
+          <p class="sort-list">
+            <button class="button-sort button-sort-active" type="button">
+              По цене
+            </button>
+            <button class="button-sort" type="button">По типу</button>
+            <button class="button-sort" type="button">По названию</button>
+          </p>
+          <p class="updown-list">
+            <button class="button-down button-down-active" type="button">
+              ▼
+            </button>
+            <button class="button-up" type="button">▲</button>
+          </p>
+        </div>
         <div class="main-image-content">
           <ul class="product-list">
             <li class="product-item">
@@ -260,7 +287,9 @@
                 />
                 <div class="product-item-popup">
                   <h3 class="popup-info">Hand made</h3>
-                  <p class="price-popup-description">Вяжу сама<br />для туристов</p>
+                  <p class="price-popup-description">
+                    Вяжу сама<br />для туристов
+                  </p>
                   <a class="button-price button" href="#">9 900 ₽</a>
                 </div>
               </div>
@@ -290,7 +319,11 @@
             </li>
             <li class="product-item">
               <div class="slider-top">
-                <div class="product-item-header" aria-label="hidden" role="presentation">
+                <div
+                  class="product-item-header"
+                  aria-label="hidden"
+                  role="presentation"
+                >
                   <span class="product-item-header-icon"></span>
                   <span class="product-item-header-icon"></span>
                   <span class="product-item-header-icon"></span>
@@ -316,7 +349,9 @@
             <button class="pagination active-button" type="button">1</button>
             <button class="pagination" type="button">2</button>
             <button class="pagination" type="button">3</button>
-            <button class="pagination-next pagination" type="button">Следующая</button>
+            <button class="pagination-next pagination" type="button">
+              Следующая
+            </button>
           </div>
         </div>
       </div>
@@ -333,7 +368,9 @@
         />
         <div class="preview">
           <h3 class="preview-title">NЁRDS DESIGN STUDIO</h3>
-          <div class="preview-adress"><p>наб. Реки Карповки,<br>5 лит П, Санкт-Петербург</p></div>
+          <div class="preview-adress">
+            <p>наб. Реки Карповки,<br />5 лит П, Санкт-Петербург</p>
+          </div>
           <div class="phone-number"><p>+7 800 555-86-28</p></div>
           <a class="map-button" href="#">Напишите нам</a>
         </div>
@@ -348,25 +385,43 @@
         </div>
       </div>
     </section>
-
     <footer class="main-footer">
       <div class="footer-describe-container">
         <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
-        <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
+        <p class="footer-description">
+          Скидка 10% для друзей из социальных сетей.
+        </p>
       </div>
       <div class="footer-icon-container">
         <a class="footer-icon" href="#" target="_blank">
-          <img class="vk-logo" src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+          <img
+            class="vk-logo"
+            src="img/vk-icon.svg"
+            width="26"
+            height="15"
+            alt="Вконтакте"
+          />
         </a>
         <a class="footer-icon" href="#" target="_blank">
-          <img class="fb-logo" src="img/fb-icon.svg" width="12" height="22" alt="Фейс бук">
+          <img
+            class="fb-logo"
+            src="img/fb-icon.svg"
+            width="12"
+            height="22"
+            alt="Фейс бук"
+          />
         </a>
         <a class="footer-icon" href="#" target="_blank">
-          <img class="inst-logo" src="img/insta-icon.svg" width="21" height="21" alt="Фейс бук"> 
+          <img
+            class="inst-logo"
+            src="img/insta-icon.svg"
+            width="21"
+            height="21"
+            alt="Фейс бук"
+          />
         </a>
       </div>
-      </footer>
-
+    </footer>
     <!-- <div class="form-content">
       <h3 class="popup-map-title">Напишите нам</h3>
       <form class="form-post" action="/" method="post">
