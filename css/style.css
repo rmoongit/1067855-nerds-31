@@ -748,46 +748,6 @@ a {
   margin-bottom: 108px;
 }
 
-.picture-items {
-  min-height: 347px;
-}
-
-.container-aside {
-  grid-area: aside;
-  outline: 5px solid rgba(218, 30, 140, 0.7);
-  outline-offset: -5px;
-}
-
-/* RADIO-BUTTON */
-.field-grid {
-  outline: 5px solid rgba(18, 230, 230, 0.7);
-  outline-offset: -5px;
-  margin-top: 54px;
-  border: none;
-}
-
-.radio-name {
-  color: var(--basic-black);
-  font-size: 16px;
-  line-height: 20px;
-}
-
-/* CHECK-BOX */
-.opt-field {
-  border: none;
-  outline: 5px solid rgba(18, 230, 230, 0.7);
-  outline-offset: -5px;
-  margin-top: 54px;
-}
-
-.opt-title {
-  color: var(--basic-black);
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-}
-
 .sort-content {
   grid-area: sort-content;
   outline: 5px solid rgba(0, 47, 255, 0.7);
@@ -811,6 +771,154 @@ a {
   outline-offset: -5px;
   margin: 0;
   margin-left: 260px;
+}
+
+.picture-items {
+  min-height: 347px;
+}
+
+.container-aside {
+  grid-area: aside;
+  outline: 5px solid rgba(218, 30, 140, 0.7);
+  outline-offset: -5px;
+}
+
+/* RADIO-BUTTON */
+.field-grid {
+  outline: 5px solid rgba(18, 230, 230, 0.7);
+  outline-offset: -5px;
+  margin-top: 54px;
+  border: none;
+  padding: 0;
+}
+
+.radio-name {
+  color: var(--basic-black);
+  font-size: 16px;
+  line-height: 20px;
+  margin-left: 11px;
+}
+
+.grid-description input + label {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-left: 0;
+}
+
+.radio-button + .radio-name::before {
+  content: "";
+  display: block;
+  background-color: var(--basic-white);
+  border: solid 4px var(--basic-light-grafit);
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+}
+
+.radio-name {
+  position: relative;
+  color: var(--basic-grafit);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.radio-button:checked + .radio-name::after {
+  position: absolute;
+  left: 8px;
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--basic-light-grafit);
+}
+
+.radio-button:disabled + .radio-name::after {
+  position: absolute;
+  left: 8px;
+  display: block;
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--basic-light-grafit);
+}
+
+.radio-button + .radio-name {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.radio-button:hover + .radio-name {
+  opacity: 1;
+}
+
+.radio-button:disabled + .radio-name {
+  opacity: 0.3;
+}
+
+/* CHECK-BOX */
+.opt-field {
+  border: none;
+  outline: 5px solid rgba(18, 230, 230, 0.7);
+  outline-offset: -5px;
+  margin-top: 54px;
+  padding: 0;
+}
+
+.opt-description input + label {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  margin-left: 0;
+}
+
+.opt-box + .opt-name::before {
+  content: "";
+  display: block;
+  background: url(../img/square-check-box.svg);
+  height: 23px;
+  width: 23px;
+}
+
+.opt-name {
+  position: relative;
+  color: var(--basic-grafit);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.opt-box:checked + .opt-name::after {
+  position: absolute;
+  left: 5px;
+  top: 0;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 16px;
+  background: url(../img/checked-box.svg);
+}
+
+.opt-box:disabled + .opt-name {
+  opacity: 0.3;
+}
+
+.opt-title {
+  color: var(--basic-black);
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+.opt-box + .opt-name {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+.opt-box:not(:disabled):hover + .opt-name {
+  opacity: 1;
 }
 
 .button-sort:hover {
@@ -876,11 +984,13 @@ a {
   opacity: 1;
 }
 
-.button-down:hover, .button-up:hover {
+.button-down:hover,
+.button-up:hover {
   opacity: 0.6;
 }
 
-.button-down:active, .button-up:active {
+.button-down:active,
+.button-up:active {
   opacity: 1;
 }
 
@@ -905,7 +1015,7 @@ a {
   width: 260px;
   margin-bottom: 14px;
   outline: 5px solid rgba(230, 18, 159, 0.7);
-  outline-offset: -5px; 
+  outline-offset: -5px;
 }
 
 .range-controls {
@@ -1128,7 +1238,7 @@ a {
 }
 
 .product-item:hover .product-item-header {
-  transition:  0.6s ease;
+  transition: 0.6s ease;
   background-color: var(--basic-light-grafit);
 }
 
@@ -1184,11 +1294,11 @@ a {
   cursor: pointer;
 }
 
-.pagination:hover {
+.pagination:not(:nth-child(1)):hover {
   background-color: var(--basic-medium-grey);
 }
 
-.pagination:active {
+.pagination:not(:nth-child(1)):active {
   background-color: var(--basic-ultra-grey);
   color: rgba(0, 0, 0, 0.3);
 }
