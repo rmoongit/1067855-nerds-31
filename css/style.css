@@ -5,7 +5,7 @@
   --basic-dim-grey: #666666;
   --basic-normal-grey: #c1c1c1;
   --basic-ultra-grey: #d5d5d5;
-  --basic-grey-border: #d7dcde;
+  --basic-grey-scale: #d7dcdf;
   --basic-dark-grey: #888888;
   --basic-medium-grey: #dfdfdf;
   --basic-shades-charcoal: #444444;
@@ -160,6 +160,10 @@ a {
   outline-offset: -5px;
 }
 
+.block-color {
+  background-color: var(--basic-light-grey);
+}
+
 .main-header-logo {
   display: flex;
   justify-self: start;
@@ -172,7 +176,7 @@ a {
   margin-left: 5px;
 }
 
-.main-header-logo img:hover {
+.main-header-logo:hover {
   opacity: 0.7;
 }
 
@@ -317,6 +321,16 @@ a {
 }
 
 .slider-button:active::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: 2px solid var(--basic-normal-grey);
+  border-radius: 50%;
+  opacity: 0.7;
+}
+
+.slider .slider-button-checked::before {
   content: "";
   display: block;
   width: 8px;
@@ -877,7 +891,7 @@ a {
 .opt-box + .opt-name::before {
   content: "";
   display: block;
-  background: url(../img/square-check-box.svg);
+  background-image: url("../img/background.svg");
   height: 23px;
   width: 23px;
 }
@@ -897,7 +911,7 @@ a {
   content: "";
   width: 20px;
   height: 16px;
-  background: url(../img/checked-box.svg);
+  background-image: url("../img/checked-box.svg");
 }
 
 .opt-box:disabled + .opt-name {
@@ -1050,7 +1064,7 @@ a {
 
 .range-controls .scale {
   height: 2px;
-  background: var(--basic-grey-border);
+  background: var(--basic-grey-scale);
 }
 
 .range-controls .bar {
@@ -1086,11 +1100,11 @@ a {
   float: right;
   border-radius: 3px;
   padding: 10px;
-  color: var(-gre);
 }
 
 .cost-title {
   margin-bottom: 55px;
+  color: var(--basic-black);
 }
 
 .cost-text {
@@ -1258,7 +1272,8 @@ a {
 }
 
 .product-item:hover {
-  box-shadow: 0 6px 15px 0 rgb(0 1 1 / 25%);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.25);
+
 }
 
 .slider-item-image {
@@ -1332,6 +1347,10 @@ a {
   outline: 5px solid rgba(200, 0, 0, 0.5);
   outline-offset: -5px;
   background-color: var(--basic-white);
+}
+
+.modal {
+  display: none;
 }
 
 .login-form {

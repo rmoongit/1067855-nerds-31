@@ -13,6 +13,7 @@
   </head>
 
   <body>
+    <div class="block-color">
     <section class="header-title-box container">
       <header class="main-header">
         <nav class="main-nav">
@@ -54,6 +55,7 @@
         </nav>
       </header>
       <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+    </div>
     </section>
 
     <main class="catalog-box container">
@@ -210,7 +212,7 @@
                 </div>
                 <img
                   class="slider-item-image"
-                  src="./img/img-sedona.jpg"
+                  src="./img/sedona.jpg"
                   width="359"
                   height="578"
                   alt="Sedona-img"
@@ -233,7 +235,7 @@
                 </div>
                 <img
                   class="slider-item-image"
-                  src="./img/img-pink.jpg"
+                  src="./img/pink.jpg"
                   width="359"
                   height="578"
                   alt="pink-img"
@@ -256,7 +258,7 @@
                 </div>
                 <img
                   class="slider-item-image"
-                  src="./img/img-barbershop.jpg"
+                  src="./img/barbershop.jpg"
                   width="359"
                   height="578"
                   alt="barber-img"
@@ -279,7 +281,7 @@
                 </div>
                 <img
                   class="slider-item-image"
-                  src="./img/img-mishka.jpg"
+                  src="./img/mishka.jpg"
                   width="359"
                   height="578"
                   alt="mishka-img"
@@ -302,7 +304,7 @@
                 </div>
                 <img
                   class="slider-item-image"
-                  src="./img/img-aplus.jpg"
+                  src="./img/aplus.jpg"
                   width="359"
                   height="578"
                   alt="aplus-img"
@@ -329,7 +331,7 @@
                 </div>
                 <img
                   class="slider-item-image"
-                  src="./img/img-kvast.jpg"
+                  src="./img/kvast.jpg"
                   width="359"
                   height="578"
                   alt="kvast-img"
@@ -421,42 +423,26 @@
         </a>
       </div>
     </footer>
-    <!-- <div class="form-content">
-      <h3 class="popup-map-title">Напишите нам</h3>
-      <form class="form-post" action="/" method="post">
-        <p class="popup-map-description">
-          <label class="user-name" for="login">Ваше имя:</label>
-          <input
-            class="user-login"
-            type="text"
-            id="login"
-            name="login"
-            placeholder="Имя Фамилия"
-          />
-        </p>
-        <p class="popup-description">
-          <label class="user-address" for="email">Ваш email:</label>
-          <input
-            class="user-email"
-            type="email"
-            id="email"
-            name="login"
-            placeholder="email@example.com"
-          />
-        </p>
-        <p class="popup-description">
-          <label class="quote-area" for="comment">Текст письма</label>
-          <textarea
-            class="area-text"
-            name="comment"
-            id="comment"
-            cols="30"
-            rows="10"
-          ></textarea>
-        </p>
-        <button class="button" type="submit">Отправить</button>
-      </form>
-      <button class="button-close" type="button">Х</button>
-    </div> -->
+    <div class="modal modal-content modal-show">
+      <h2 class="popup-title">Напишите нам</h2>
+     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+     <div class="modal-content-wrapper">
+       <p class="popup-description">
+       <label class="user-name" for="login">Ваше имя:</label>
+       <input class="user-login" type="text" id="login" name="login" placeholder="Имя Фамилия"></p>
+       <p class="popup-description">
+       <label class="user-address" for="email">Ваш email:</label>
+       <input class="user-email" type="email" id="email" name="login" placeholder="email@example.com"></p>
+     </div>
+       <p class="popup-description">
+       <label class="quote-area"  for="comment">Текст письма:</label>
+       <textarea class="area-text" placeholder="В свободной форме"  name="comment" id="comment" cols="40" rows="10"></textarea>
+     </p>
+     <button class="popup-button" type="submit">Отправить</button>
+     </form>
+     <button class="modal-close" type="button">
+       <img src="./img/cross-show.svg" alt="cross-img">
+     </button>
+   </div> 
   </body>
 </html>
