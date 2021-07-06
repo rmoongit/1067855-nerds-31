@@ -155,11 +155,6 @@ a {
 }
 
 /*  Header */
-.main-header {
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
-}
-
 .block-color {
   background-color: var(--basic-light-grey);
 }
@@ -168,8 +163,6 @@ a {
   display: flex;
   justify-self: start;
   grid-area: header-logo;
-  outline: 5px solid rgba(200, 0, 0, 0.5);
-  outline-offset: -5px;
 }
 
 .header-logo {
@@ -236,8 +229,6 @@ a {
   display: block;
   position: relative;
   grid-area: login-link;
-  outline: 5px solid rgba(200, 0, 0, 0.5);
-  outline-offset: -5px;
 }
 
 .login-link {
@@ -278,22 +269,16 @@ a {
   font-size: 16px;
   color: var(--basic-grafit);
   background-color: var(--basic-light-grey);
-  outline: 5px solid rgba(0, 47, 255, 0.7);
-  outline-offset: -5px;
   margin: 0 auto;
 }
 
 .main-section-block {
   grid-area: main-block;
-  outline: 5px solid rgba(166, 187, 47, 0.7);
-  outline-offset: -5px;
 }
 
 .section-slide-block {
   position: relative;
   grid-area: slide-block;
-  outline: 5px solid rgba(30, 158, 218, 0.7);
-  outline-offset: -5px;
 }
 
 .slider {
@@ -375,16 +360,12 @@ a {
   color: var(--basic-grafit);
   background-color: var(--basic-white);
   border-bottom: 2px solid var(--basic-light-grey);
-  /* outline: 5px solid rgba(255, 0, 0, 0.7); */
-  /* outline-offset: -5px; */
 }
 
 .picture-list {
   display: flex;
   justify-content: flex-start;
   list-style: none;
-  outline: 5px solid rgba(218, 30, 140, 0.7);
-  outline-offset: -5px;
 }
 
 .order-title {
@@ -435,8 +416,6 @@ a {
 
 .present-section-block {
   grid-area: present-section-block;
-  outline: 5px solid rgba(0, 47, 255, 0.7);
-  outline-offset: -5px;
 }
 
 .stat-section-block {
@@ -447,8 +426,6 @@ a {
   align-items: center;
   grid-area: stat-section-block;
   text-align: center;
-  outline: 5px solid rgba(18, 230, 230, 0.7);
-  outline-offset: -5px;
 }
 
 .stat-list {
@@ -520,8 +497,6 @@ a {
 
 /* BRAND SECTION */
 .brand-section {
-  /* outline: 5px solid rgba(166, 187, 47, 0.7); */
-  outline-offset: -5px;
   margin-top: 73px;
   border-top: 2px solid var(--basic-light-grey);
   border-bottom: 2px solid var(--basic-light-grey);
@@ -566,8 +541,6 @@ a {
   padding: 0;
   margin: 0 auto;
   margin-top: 80px;
-  outline-offset: -5px;
-  outline: 5px solid rgba(218, 30, 140, 0.7);
 }
 
 .map-logo {
@@ -596,8 +569,6 @@ a {
   position: absolute;
   width: 319px;
   height: 308px;
-  outline-offset: -5px;
-  outline: 5px solid rgba(85, 177, 10, 0.7);
   background-color: var(--basic-white);
 }
 
@@ -666,8 +637,6 @@ a {
   margin-left: auto;
   margin-right: auto;
   background-color: var(--basic-white);
-  outline-offset: -5px;
-  outline: 5px solid rgba(255, 0, 0, 0.7);
 }
 
 .footer-describe-container {
@@ -734,8 +703,6 @@ a {
 .header-title-box {
   background-color: var(--basic-light-grey);
   height: 355px;
-  outline: 5px solid rgba(0, 47, 255, 0.7);
-  outline-offset: -5px;
 }
 
 .catalog-box {
@@ -746,14 +713,10 @@ a {
   grid-auto-rows: min-content;
   display: grid;
   align-content: start;
-  outline: 5px solid rgba(245, 4, 24, 0.7);
-  outline-offset: -5px;
 }
 
 .catalog-title {
   text-align: center;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
   color: var(--basic-black);
   background-color: var(--basic-light-grey);
   font-size: 55px;
@@ -764,8 +727,6 @@ a {
 
 .sort-content {
   grid-area: sort-content;
-  outline: 5px solid rgba(0, 47, 255, 0.7);
-  outline-offset: -5px;
   margin: 0;
 }
 
@@ -774,15 +735,11 @@ a {
   margin: 0;
   padding: 0;
   display: flex;
-  outline: 5px solid rgba(166, 187, 47, 0.7);
-  outline-offset: -5px;
 }
 
 .sort-list {
   display: flex;
   text-align: center;
-  outline: 5px solid rgba(18, 230, 230, 0.7);
-  outline-offset: -5px;
   margin: 0;
   margin-left: 260px;
 }
@@ -793,14 +750,10 @@ a {
 
 .container-aside {
   grid-area: aside;
-  outline: 5px solid rgba(218, 30, 140, 0.7);
-  outline-offset: -5px;
 }
 
 /* RADIO-BUTTON */
 .field-grid {
-  outline: 5px solid rgba(18, 230, 230, 0.7);
-  outline-offset: -5px;
   margin-top: 54px;
   border: none;
   padding: 0;
@@ -875,8 +828,6 @@ a {
 /* CHECK-BOX */
 .opt-field {
   border: none;
-  outline: 5px solid rgba(18, 230, 230, 0.7);
-  outline-offset: -5px;
   margin-top: 54px;
   padding: 0;
 }
@@ -1009,8 +960,6 @@ a {
 }
 
 .filter-item {
-  outline: 5px solid rgba(0, 47, 255, 0.7);
-  outline-offset: -5px;
   border: none;
   padding: 0;
   margin: 0;
@@ -1028,8 +977,6 @@ a {
 .range-filter {
   width: 260px;
   margin-bottom: 14px;
-  outline: 5px solid rgba(230, 18, 159, 0.7);
-  outline-offset: -5px;
 }
 
 .range-controls {
@@ -1175,8 +1122,6 @@ a {
   display: flex;
   flex-direction: column;
   margin-top: 48px;
-  outline: 5px solid rgba(0, 255, 0, 0.7);
-  outline-offset: -5px;
   width: 760px;
 }
 
@@ -1344,8 +1289,6 @@ a {
   top: 20px;
   width: 960px;
   height: 590px;
-  outline: 5px solid rgba(200, 0, 0, 0.5);
-  outline-offset: -5px;
   background-color: var(--basic-white);
 }
 
