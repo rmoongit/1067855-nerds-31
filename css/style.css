@@ -285,14 +285,14 @@ a {
   position: absolute;
   display: flex;
   column-gap: 17px;
-  left: 139px;
-  bottom: 96px;
+  left: 126px;
+  bottom: 97px;
 }
 
 .slider-background-logo {
   position: absolute;
   right: 15px;
-  bottom: 5px;
+  bottom: 0px;
 }
 
 .slider-button {
@@ -589,6 +589,10 @@ a {
 .phone-number {
   color: var(--basic-dim-grey);
   margin-bottom: 37px;
+}
+
+.phone-number a {
+  color: var(--basic-dim-grey);
 }
 
 .map-button {
@@ -1226,10 +1230,11 @@ a {
 }
 
 .product-item-header-icon {
+  display: inline-block;
+  vertical-align: middle;
   margin-top: 13px;
   margin-bottom: 13px;
   margin-left: 9px;
-  display: inline-block;
   width: 14px;
   height: 14px;
   background: var(--basic-white);
