@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500;700&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="./css/normalize.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="icon" href="./img/favicon.ico">
+    <link rel="icon" href="./img/icon/favicon.ico">
    </head>
    
   <body class="main-page-body">
@@ -24,7 +24,7 @@
     </ul>
     <div class="user-navigation">
     <a class="login-link" href="#">Корзина
-    <img class="cart-logo" src="img/cart-icon.svg " width="15" height="11" alt="Корзина">
+    <img class="cart-logo" src="./img/icon/cart-icon.svg" width="15" height="11" alt="Корзина">
   </a>
 </div>
 </nav> 
@@ -144,7 +144,8 @@
 </section>
 <section class="map-section">
 <div class="map-container">
-  <img class="map-logo" src="img/map1.png" width="1440" height="416" alt="Карта города">
+  <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A78955d892db9ae2bbb12aad3ded40a97b0085e67339a0e4de19f0dd9bc37d4dd&amp;source=constructor" width="100%" height="416" frameborder="0">
+  </iframe>
   <div class="preview">
     <h3 class="preview-title">NЁRDS DESIGN STUDIO</h3>
     <div class="preview-adress"><p>наб. Реки Карповки,<br>5 лит П, Санкт-Петербург</p></div>
@@ -152,7 +153,7 @@
     <a class="map-button" href="#">Напишите нам</a>
   </div>
   <div class="pin">
-    <img class="pin-logo" src="img/mapmarker1.png" width="231" height="190" alt="пин карты">
+    <img class="pin-logo" src="img/icon/mapmarker1.png" width="231" height="190" alt="пин карты">
   </div>
 </div>
 </section>
@@ -165,38 +166,39 @@
   <p class="footer-description">Скидка 10% для друзей из социальных сетей.</p>
 </div>
 <div class="footer-icon-container" id="contacts">
-  <a class="footer-icon" href="#" target="_blank">
-    <img class="vk-logo hide-in" src="img/vk-icon.svg" width="26" height="15" alt="Вконтакте">
+  <a class="footer-icon" href="#" target="_blank" aria-label="Вконтакте">
+    <img class="vk-logo hide-in" src="img/icon/vk-icon.svg" width="26" height="15" alt="Вконтакте">
   </a>
-  <a class="footer-icon" href="#" target="_blank">
-    <img class="fb-logo hide-in" src="img/fb-icon.svg" width="12" height="22" alt="Фейс бук">
+  <a class="footer-icon" href="#" target="_blank" aria-label="Фейсбук">
+    <img class="fb-logo hide-in" src="img/icon/fb-icon.svg" width="12" height="22" alt="Фейс бук">
   </a>
-  <a class="footer-icon" href="#" target="_blank">
-    <img class="inst-logo hide-in" src="img/insta-icon.svg" width="21" height="21" alt="Фейс бук"> 
+  <a class="footer-icon" href="#" target="_blank" aria-label="Инстаграм">
+    <img class="inst-logo hide-in" src="img/icon/insta-icon.svg" width="21" height="21" alt="Фейс бук"> 
   </a>
 </div>
 </footer>
 
- <div class="modal modal-content modal-show">
-   <h2 class="popup-title">Напишите нам</h2>
-  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-  <div class="modal-content-wrapper">
-    <p class="popup-description">
-    <label class="user-name" for="login">Ваше имя:</label>
-    <input class="user-login" type="text" id="login" name="login" placeholder="Имя Фамилия"></p>
-    <p class="popup-description">
-    <label class="user-address" for="email">Ваш email:</label>
-    <input class="user-email" type="email" id="email" name="login" placeholder="email@example.com"></p>
-  </div>
-    <p class="popup-description">
-    <label class="quote-area"  for="comment">Текст письма:</label>
-    <textarea class="area-text" placeholder="В свободной форме"  name="comment" id="comment" cols="40" rows="10"></textarea>
-  </p>
-  <button class="popup-button" type="submit">Отправить</button>
-  </form>
-  <button class="modal-close" type="button">
-    <img src="./img/cross-show.svg" alt="cross-img" width="21" height="21">
-  </button>
+<div class="modal-content .modal-show">
+  <h2 class="popup-title">Напишите нам</h2>
+ <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+ <div class="modal-content-wrapper">
+   <p class="popup-description">
+   <label class="user-name" for="login">Ваше имя:</label>
+   <input class="user-login" type="text" id="login" name="login" placeholder="Имя Фамилия"></p>
+   <p class="popup-description">
+   <label class="user-address" for="email">Ваш email:</label>
+   <input class="user-email" type="email" id="email" name="login" placeholder="email@example.com"></p>
+ </div>
+   <p class="popup-description">
+   <label class="quote-area"  for="comment">Текст письма:</label>
+   <textarea class="area-text" placeholder="В свободной форме"  name="comment" id="comment" cols="40" rows="10"></textarea>
+ </p>
+ <button class="popup-button" type="submit">Отправить</button>
+ </form>
+ <button class="cross-close" type="button">
+   <img src="./img/icon/cross-show.svg" alt="cross-img" width="21" height="21">
+ </button>
 </div>
+<script src="js/script.js"></script>
 </body>
 </html>
