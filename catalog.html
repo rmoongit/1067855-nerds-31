@@ -7,56 +7,56 @@
     />
     <link rel="icon" href="./img/icon/favicon.ico" />
     <link rel="stylesheet" href="./css/normalize.css" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/style.mini.css" />
     <title>HTML Academy: Каталог</title>
     <meta charset="utf-8" />
   </head>
 
   <body>
     <div class="block-color">
-    <section class="header-title-box container">
-      <header class="main-header">
-        <nav class="main-nav">
-          <a class="main-header-logo" href="index.html">
-            <img
-              class="header-logo"
-              src="img/nerds-logo.png"
-              width="160"
-              height="65"
-              alt="Логотип Хедер"
-            />
-          </a>
-          <ul class="list-navigation">
-            <li class="nav-items">
-              <a class="nav-items-link" href="#">Студия</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-items-link" href="index.html#clients">Клиенты</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-items-link active" href="#">Магазин</a>
-            </li>
-            <li class="nav-items">
-              <a class="nav-items-link" href="#contacts">Контакты</a>
-            </li>
-          </ul>
-          <div class="user-navigation">
-            <a class="login-link" href="#"
-              >Корзина
+      <section class="header-title-box container">
+        <header class="main-header">
+          <nav class="main-nav">
+            <a class="main-header-logo" href="index.html">
               <img
-                class="cart-logo"
-                src="./img/icon/cart-icon.svg"
-                width="15"
-                height="11"
-                alt="Корзина"
+                class="header-logo"
+                src="img/nerds-logo.png"
+                width="160"
+                height="65"
+                alt="Логотип Хедер"
               />
             </a>
-          </div>
-        </nav>
-      </header>
-      <h1 class="catalog-title">Магазин готовых шаблонов</h1>
-    </section>
-  </div>
+            <ul class="list-navigation">
+              <li class="nav-items">
+                <a class="nav-items-link" href="#">Студия</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-items-link" href="index.html#clients">Клиенты</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-items-link active" href="#">Магазин</a>
+              </li>
+              <li class="nav-items">
+                <a class="nav-items-link" href="#contacts">Контакты</a>
+              </li>
+            </ul>
+            <div class="user-navigation">
+              <a class="login-link" href="#"
+                >Корзина
+                <img
+                  class="cart-logo"
+                  src="./img/icon/cart-icon.svg"
+                  width="15"
+                  height="11"
+                  alt="Корзина"
+                />
+              </a>
+            </div>
+          </nav>
+        </header>
+        <h1 class="catalog-title">Магазин готовых шаблонов</h1>
+      </section>
+    </div>
 
     <main class="catalog-box container">
       <aside class="container-aside">
@@ -66,8 +66,7 @@
             <div class="range-filter">
               <div class="range-controls">
                 <div class="scale">
-                  <div class="bar" style="width: 30%; margin-left: 20%">
-                  </div>
+                  <div class="bar" style="width: 30%; margin-left: 20%"></div>
                 </div>
                 <div
                   class="toggle toggle-min"
@@ -82,11 +81,23 @@
               </div>
               <div class="cost-description">
                 <p class="cost-contain">
-                  <input class="cost-box" type="number" id="of" name="of" value="0" />
+                  <input
+                    class="cost-box"
+                    type="number"
+                    id="of"
+                    name="of"
+                    value="0"
+                  />
                   <label class="cost-text" for="of">От</label>
                 </p>
                 <p class="cost-contain">
-                  <input class="cost-box" type="number" id="to" name="to" value="150000"/>
+                  <input
+                    class="cost-box"
+                    type="number"
+                    id="to"
+                    name="to"
+                    value="150000"
+                  />
                   <label class="cost-text" for="to">До</label>
                 </p>
               </div>
@@ -131,7 +142,7 @@
             <legend class="opt-title">Особенности:</legend>
             <p class="opt-description">
               <input
-                class="opt-box  visually-hidden"
+                class="opt-box visually-hidden"
                 type="checkbox"
                 id="checkbox-label1"
                 name="ch1"
@@ -360,14 +371,26 @@
 
     <section class="map-section">
       <div class="map-container">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A78955d892db9ae2bbb12aad3ded40a97b0085e67339a0e4de19f0dd9bc37d4dd&amp;source=constructor" width="100%" height="416" frameborder="0">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d3262.709780025201!
+        2d30.316109139598208!3d59.96755224344879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!
+        3e6!4m0!4m5!1s0x4696315bc4e8ce61%3A0xe703c377f3424272!2zU3R1ZGlvIDIxMiwg0L3QsNCxLiBQ0LXQutC4INCa0LDRgNC_0L7QstC60LgsIDUg0LrQvtGA0L_Rg9GBINCfLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywg0KDQvtGB0YHQuNGPLCAxOTcwMjI!
+        3m2!1d59.968243099999995!2d30.3171593!5e0!3m2!1sru!2s!4v1625835103388!5m2!1sru!2s"
+          width="1349"
+          height="416"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          >
         </iframe>
         <div class="preview">
           <h3 class="preview-title">NЁRDS DESIGN STUDIO</h3>
           <div class="preview-adress">
             <p>наб. Реки Карповки,<br />5 лит П, Санкт-Петербург</p>
           </div>
-          <div class="phone-number"><a href="tel+78005558628">+7 800 555-86-28</a></div>
+          <div class="phone-number">
+            <a href="tel+78005558628">+7 800 555-86-28</a>
+          </div>
           <a class="map-button" href="#">Напишите нам</a>
         </div>
         <div class="pin">
@@ -381,7 +404,7 @@
         </div>
       </div>
     </section>
-    <footer class="main-footer"  id="contacts">
+    <footer class="main-footer" id="contacts">
       <div class="footer-describe-container">
         <h2 class="footer-title">Давайте дружить, это выгодно!</h2>
         <p class="footer-description">
@@ -420,25 +443,55 @@
     </footer>
     <div class="modal-content .modal-show">
       <h2 class="popup-title">Напишите нам</h2>
-     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-     <div class="modal-content-wrapper">
-       <p class="popup-description">
-       <label class="user-name" for="login">Ваше имя:</label>
-       <input class="user-login" type="text" id="login" name="login" placeholder="Имя Фамилия"></p>
-       <p class="popup-description">
-       <label class="user-address" for="email">Ваш email:</label>
-       <input class="user-email" type="email" id="email" name="login" placeholder="email@example.com"></p>
-     </div>
-       <p class="popup-description">
-       <label class="quote-area"  for="comment">Текст письма:</label>
-       <textarea class="area-text" placeholder="В свободной форме"  name="comment" id="comment" cols="40" rows="10"></textarea>
-     </p>
-     <button class="popup-button" type="submit">Отправить</button>
-     </form>
-     <button class="cross-close" type="button">
-       <img src="./img/icon/cross-show.svg" alt="cross-img" width="21" height="21">
-     </button>
+      <form
+        class="login-form"
+        action="https://echo.htmlacademy.ru"
+        method="post"
+      >
+        <div class="modal-content-wrapper">
+          <p class="popup-description">
+            <label class="user-name" for="login">Ваше имя:</label>
+            <input
+              class="user-login"
+              type="text"
+              id="login"
+              name="login"
+              placeholder="Имя Фамилия"
+            />
+          </p>
+          <p class="popup-description">
+            <label class="user-address" for="email">Ваш email:</label>
+            <input
+              class="user-email"
+              type="email"
+              id="email"
+              name="login"
+              placeholder="email@example.com"
+            />
+          </p>
+        </div>
+        <p class="popup-description">
+          <label class="quote-area" for="comment">Текст письма:</label>
+          <textarea
+            class="area-text"
+            placeholder="В свободной форме"
+            name="comment"
+            id="comment"
+            cols="40"
+            rows="10"
+          ></textarea>
+        </p>
+        <button class="popup-button" type="submit">Отправить</button>
+      </form>
+      <button class="cross-close" type="button">
+        <img
+          src="./img/icon/cross-show.svg"
+          alt="cross-img"
+          width="21"
+          height="21"
+        />
+      </button>
     </div>
-   <script src="js/script.js"></script>
+    <script src="js/script.mini.js"></script>
   </body>
 </html>
