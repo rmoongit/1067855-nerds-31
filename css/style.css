@@ -1475,6 +1475,8 @@ input:invalid {
   border: none;
 }
 
+/* Animations */
+
 @keyframes shake {
   0%,
   100% {
